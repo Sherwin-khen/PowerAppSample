@@ -15,7 +15,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/19/2022 08:59:19",
+  "HeaderLastSavedDateTimeUTC": "07/19/2022 09:00:55",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -38,17 +38,17 @@
     "label": 2
   },
   "PublishOrderIndices": {
-    "AddMediaButton1": 0,
+    "AddMediaButton1": 2,
     "AddMediaWithImage1": 0,
     "Andrea": 0,
     "Andrew": 0,
     "App": 0,
     "Hans": 0,
-    "Label1": 0,
+    "Label1": 3,
     "Noriel": 0,
     "Sherwin": 0,
     "Sussen": 0,
-    "UploadedImage1": 0
+    "UploadedImage1": 1
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
