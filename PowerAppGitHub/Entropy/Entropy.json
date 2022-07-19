@@ -1,6 +1,8 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueIds": {
+    "AddMediaButton1": 11,
+    "AddMediaWithImage1": 12,
     "Andrea": 6,
     "Andrew": 7,
     "App": 1,
@@ -8,11 +10,12 @@
     "Label1": 9,
     "Noriel": 3,
     "Sherwin": 8,
-    "Sussen": 4
+    "Sussen": 4,
+    "UploadedImage1": 10
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/19/2022 08:32:07",
+  "HeaderLastSavedDateTimeUTC": "07/19/2022 08:59:19",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -21,13 +24,22 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "AddMediaWithImage1": {
+      "AddMediaButton1": 1,
+      "UploadedImage1": 0
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "label": 0
+    "addMedia": 1,
+    "image": 0,
+    "label": 2
   },
   "PublishOrderIndices": {
+    "AddMediaButton1": 0,
+    "AddMediaWithImage1": 0,
     "Andrea": 0,
     "Andrew": 0,
     "App": 0,
@@ -35,14 +47,21 @@
     "Label1": 0,
     "Noriel": 0,
     "Sherwin": 0,
-    "Sussen": 0
+    "Sussen": 0,
+    "UploadedImage1": 0
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0237332,
-    "ControlCount": {},
+    "AnalysisLoadTime": 0.0953398,
+    "ControlCount": {
+      "label": 1,
+      "screen": 6
+    },
+    "DeserializationLoadTime": 0.5863348,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

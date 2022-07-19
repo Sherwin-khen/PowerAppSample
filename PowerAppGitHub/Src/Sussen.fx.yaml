@@ -1,2 +1,26 @@
 Sussen As screen:
 
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        UploadedImage1 As image:
+            Height: =515
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =711
+            X: =340
+            Y: =108
+            ZIndex: =2
+
+        AddMediaButton1 As addMedia:
+            Height: =515
+            Size: =25
+            Width: =711
+            X: =340
+            Y: =108
+            ZIndex: =3
+
