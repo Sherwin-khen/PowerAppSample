@@ -1,2 +1,12 @@
 Sherwin As screen:
 
+    Label1 As label:
+        Align: =Align.Center
+        Height: =481
+        Size: =90
+        Text: ="Sherwin"
+        Width: =1238
+        X: =33
+        Y: =114
+        ZIndex: =1
+

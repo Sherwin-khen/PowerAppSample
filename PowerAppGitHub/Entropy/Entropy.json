@@ -5,13 +5,14 @@
     "Andrew": 7,
     "App": 1,
     "Hans": 5,
+    "Label1": 9,
     "Noriel": 3,
     "Sherwin": 8,
     "Sussen": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/19/2022 08:25:49",
+  "HeaderLastSavedDateTimeUTC": "07/19/2022 08:31:02",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -23,12 +24,15 @@
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "label": 0
+  },
   "PublishOrderIndices": {
     "Andrea": 0,
     "Andrew": 0,
     "App": 0,
     "Hans": 0,
+    "Label1": 0,
     "Noriel": 0,
     "Sherwin": 0,
     "Sussen": 0
