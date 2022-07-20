@@ -1,28 +1,8 @@
 {
   "ComponentIndexes": {},
-  "ControlUniqueIds": {
-    "AddMediaButton1": 18,
-    "AddMediaWithImage1": 19,
-    "Andrea": 3,
-    "Andrew": 6,
-    "App": 1,
-    "Hans": 7,
-    "Label1": 13,
-    "Label2": 8,
-    "Label2_1": 9,
-    "Label2_2": 10,
-    "Label3": 16,
-    "Noriel": 11,
-    "Sherwin": 12,
-    "Sussen": 15,
-    "TextInput1": 4,
-    "TextInput1_1": 5,
-    "TextInput2": 14,
-    "UploadedImage1": 17
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/20/2022 01:02:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -31,57 +11,12 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
-  "OrderGroupControls": {
-    "AddMediaWithImage1": {
-      "AddMediaButton1": 1,
-      "UploadedImage1": 0
-    }
-  },
+  "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "addMedia": 3,
-    "image": 2,
-    "label": 1,
-    "text": 0
-  },
-  "PublishOrderIndices": {
-    "AddMediaButton1": 17,
-    "AddMediaWithImage1": 18,
-    "Andrea": 1,
-    "Andrew": 4,
-    "App": 0,
-    "Hans": 6,
-    "Label1": 12,
-    "Label2": 7,
-    "Label2_1": 8,
-    "Label2_2": 9,
-    "Label3": 15,
-    "Noriel": 10,
-    "Sherwin": 11,
-    "Sussen": 14,
-    "TextInput1": 2,
-    "TextInput1_1": 3,
-    "TextInput2": 13,
-    "UploadedImage1": 16
-  },
-  "ResourcesJsonIndices": {
-    "Image-SampleImage": 0
-  },
+  "OrderXMLTemplate": {},
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.1748234,
-    "ControlCount": {
-      "addMedia": 1,
-      "group": 1,
-      "image": 1,
-      "label": 5,
-      "screen": 6,
-      "text": 3
-    },
-    "DeserializationLoadTime": 1.2759954,
-    "ErrorCount": 0
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
