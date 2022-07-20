@@ -17,3 +17,12 @@ Hans As screen:
         Y: =234
         ZIndex: =2
 
+    Label2_2 As label:
+        Height: =351
+        Size: =100
+        Text: ="かめんりでる"
+        Width: =631
+        X: =669
+        Y: =261
+        ZIndex: =3
+
