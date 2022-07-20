@@ -1,1 +1,71 @@
-{}
+{
+  "277835e5-17ec-4e00-bb34-a0b1537a2f81": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1570/1.0.1570.2764/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel"
+    },
+    "datasets": {
+      "b!Ffv4X_E07EyXBQtx8ah7ekpMIktfKOhMj9VRWVm93ABNyrapOoRXTZbWRLS_uaqC.01C7GD7YSXWRT47CVJWRD2DKH2S76233FM": {
+        "dataSources": {
+          "team_andrew": {
+            "tableName": "team_andrew"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "team_andrew"
+    ],
+    "dependencies": {
+      "fileSource": "58955732-498b-4a38-9494-c411aea9131a"
+    },
+    "dependents": [],
+    "id": "277835e5-17ec-4e00-bb34-a0b1537a2f81"
+  },
+  "56cd3b3e-143e-4c5a-8d53-a20171a114e8": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://fujitsu.sharepoint.com/teams/Global-f1dd7691": {
+        "dataSources": {
+          "Test_db ken": {
+            "tableName": "819ab4ad-6897-4283-96b8-d2ca2c07a94b"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Test_db ken"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "56cd3b3e-143e-4c5a-8d53-a20171a114e8"
+  },
+  "58955732-498b-4a38-9494-c411aea9131a": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "277835e5-17ec-4e00-bb34-a0b1537a2f81"
+    ],
+    "id": "58955732-498b-4a38-9494-c411aea9131a"
+  }
+}
