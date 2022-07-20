@@ -1,9 +1,2 @@
 Noriel As screen:
 
-    Label6 As label:
-        Text: |-
-            ="Tahimik Lang :)"
-        X: =40
-        Y: =40
-        ZIndex: =1
-
