@@ -17,3 +17,12 @@ Andrew As screen:
         Y: =489
         ZIndex: =2
 
+    Label5 As label:
+        Height: =390
+        Size: =100
+        Text: ="Sana OK ka Lang"
+        Width: =1027
+        X: =279
+        Y: =355
+        ZIndex: =3
+
