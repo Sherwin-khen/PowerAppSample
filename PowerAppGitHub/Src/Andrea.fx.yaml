@@ -1,2 +1,11 @@
 Andrea As screen:
 
+    TextInput1 As text:
+        Default: ="Text input"
+        Height: =232
+        Mode: =TextMode.MultiLine
+        Width: =652
+        X: =279
+        Y: =201
+        ZIndex: =1
+
