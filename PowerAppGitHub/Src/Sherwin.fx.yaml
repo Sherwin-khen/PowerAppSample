@@ -10,3 +10,10 @@ Sherwin As screen:
         Y: =114
         ZIndex: =1
 
+    TextInput2 As text:
+        Default: ="Text input"
+        Height: =32
+        X: =432
+        Y: =212
+        ZIndex: =2
+
