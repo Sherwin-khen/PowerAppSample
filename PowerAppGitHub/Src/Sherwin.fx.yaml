@@ -22,8 +22,8 @@ Sherwin As screen:
         Items: =team_andrew
         Layout: =Layout.Vertical
         TemplateSize: =74
-        X: =272
-        Y: =462
+        X: =368
+        Y: =391
         ZIndex: =3
 
         Label6 As label:
