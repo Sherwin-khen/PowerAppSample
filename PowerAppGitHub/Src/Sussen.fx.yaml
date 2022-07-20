@@ -24,3 +24,9 @@ Sussen As screen:
             Y: =108
             ZIndex: =3
 
+    Label3 As label:
+        Text: ="Pogi ni Andrew hahaha "
+        X: =40
+        Y: =40
+        ZIndex: =4
+
