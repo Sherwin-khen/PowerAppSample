@@ -7,6 +7,7 @@
     "Andrew": 6,
     "App": 1,
     "Hans": 7,
+    "Image1": 21,
     "Label1": 13,
     "Label2": 8,
     "Label2_1": 9,
@@ -23,7 +24,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/20/2022 01:01:01",
+  "HeaderLastSavedDateTimeUTC": "07/20/2022 01:09:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -42,8 +43,8 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "addMedia": 3,
-    "image": 2,
-    "label": 1,
+    "image": 1,
+    "label": 2,
     "text": 0
   },
   "PublishOrderIndices": {
@@ -53,6 +54,7 @@
     "Andrew": 4,
     "App": 0,
     "Hans": 6,
+    "Image1": 0,
     "Label1": 12,
     "Label2": 7,
     "Label2_1": 8,

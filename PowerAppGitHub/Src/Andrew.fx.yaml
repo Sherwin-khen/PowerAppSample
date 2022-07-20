@@ -4,10 +4,16 @@ Andrew As screen:
         BorderStyle: =BorderStyle.None
         Default: ="BILI KAYO YELO WAMPIPTI LANG"
         FontWeight: =FontWeight.Bold
-        Height: =536
+        Height: =114
         Size: =35
         Width: =1176
         X: =45
         Y: =66
         ZIndex: =1
+
+    Image1 As image:
+        Image: =
+        X: =279
+        Y: =489
+        ZIndex: =2
 
