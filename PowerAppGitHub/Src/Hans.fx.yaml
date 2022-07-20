@@ -8,3 +8,12 @@ Hans As screen:
         X: =402
         ZIndex: =1
 
+    Label2_1 As label:
+        Height: =351
+        Size: =100
+        Text: ="testing"
+        Width: =433
+        X: =108
+        Y: =234
+        ZIndex: =2
+
