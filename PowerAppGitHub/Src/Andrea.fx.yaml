@@ -18,3 +18,19 @@ Andrea As screen:
         Y: =295
         ZIndex: =2
 
+    Label8 As label:
+        Height: =225
+        Size: =75
+        Text: ="ANDREA! ang SINAING!!!"
+        Width: =806
+        X: =205
+        Y: =505
+        ZIndex: =3
+
+    Label10 As label:
+        Height: =94
+        Text: ="wala pang sinaing!"
+        X: =920
+        Y: =636
+        ZIndex: =4
+

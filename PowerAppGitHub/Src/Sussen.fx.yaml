@@ -38,3 +38,12 @@ Sussen As screen:
         Y: =660
         ZIndex: =5
 
+    Label9 As label:
+        Height: =188
+        Size: =45
+        Text: ="NAOL MAY LABEL! -AKO si  ANDREW"
+        Width: =627
+        X: =670
+        Y: =580
+        ZIndex: =6
+
