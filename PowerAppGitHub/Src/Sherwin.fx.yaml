@@ -18,7 +18,7 @@ Sherwin As screen:
         ZIndex: =2
 
     Gallery1 As gallery.galleryVertical:
-        Fill: =RGBA(255, 46, 224, 1)
+        Fill: =RGBA(46, 255, 91, 1)
         Height: =535
         Items: ='Test_db ken'
         Layout: =Layout.Vertical
