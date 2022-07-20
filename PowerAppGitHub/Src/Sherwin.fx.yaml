@@ -1,5 +1,5 @@
 Sherwin As screen:
-    Fill: =RGBA(255, 0, 0, 0.8)
+    Fill: =RGBA(54, 176, 75, 1)
 
     Label1 As label:
         Align: =Align.Center
