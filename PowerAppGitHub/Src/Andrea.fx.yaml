@@ -45,7 +45,7 @@ Andrea As screen:
 
         AddMediaButton2 As addMedia:
             Size: =25
-            X: =405
-            Y: =402
+            X: =975
+            Y: =320
             ZIndex: =5
 

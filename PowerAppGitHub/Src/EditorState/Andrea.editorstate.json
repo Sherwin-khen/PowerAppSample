@@ -44,7 +44,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%AddMedia.ID%",
       "Name": "AddMediaButton2",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -220,7 +220,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AddMediaWithImage2",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -387,7 +387,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -918,7 +918,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput1_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1165,7 +1165,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%Image.ID%",
       "Name": "UploadedImage2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
