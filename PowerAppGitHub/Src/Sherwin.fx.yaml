@@ -17,3 +17,12 @@ Sherwin As screen:
         Y: =212
         ZIndex: =2
 
+    Label7 As label:
+        Height: =205
+        Size: =50
+        Text: ="Ako si ANDREW"
+        Width: =651
+        X: =230
+        Y: =535
+        ZIndex: =3
+
