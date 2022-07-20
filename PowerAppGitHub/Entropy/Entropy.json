@@ -1,33 +1,8 @@
 {
   "ComponentIndexes": {},
-  "ControlUniqueIds": {
-    "AddMediaButton1": 23,
-    "AddMediaWithImage1": 24,
-    "Andrea": 3,
-    "Andrew": 6,
-    "App": 1,
-    "Hans": 9,
-    "Image1": 8,
-    "Label1": 17,
-    "Label2": 10,
-    "Label2_1": 11,
-    "Label2_2": 12,
-    "Label2_3": 14,
-    "Label2_4": 13,
-    "Label3": 20,
-    "Label4": 21,
-    "Noriel": 15,
-    "Sherwin": 16,
-    "Sussen": 19,
-    "TextInput1": 4,
-    "TextInput1_1": 5,
-    "TextInput2": 18,
-    "TextInput3": 7,
-    "UploadedImage1": 22
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/20/2022 01:26:01",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -36,62 +11,12 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
-  "OrderGroupControls": {
-    "AddMediaWithImage1": {
-      "AddMediaButton1": 1,
-      "UploadedImage1": 0
-    }
-  },
+  "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "addMedia": 3,
-    "image": 1,
-    "label": 2,
-    "text": 0
-  },
-  "PublishOrderIndices": {
-    "AddMediaButton1": 22,
-    "AddMediaWithImage1": 23,
-    "Andrea": 1,
-    "Andrew": 4,
-    "App": 0,
-    "Hans": 8,
-    "Image1": 6,
-    "Label1": 16,
-    "Label2": 9,
-    "Label2_1": 10,
-    "Label2_2": 11,
-    "Label2_3": 13,
-    "Label2_4": 12,
-    "Label3": 19,
-    "Label4": 20,
-    "Noriel": 14,
-    "Sherwin": 15,
-    "Sussen": 18,
-    "TextInput1": 2,
-    "TextInput1_1": 3,
-    "TextInput2": 17,
-    "TextInput3": 5,
-    "UploadedImage1": 21
-  },
-  "ResourcesJsonIndices": {
-    "Image-SampleImage": 0
-  },
+  "OrderXMLTemplate": {},
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.0934602,
-    "ControlCount": {
-      "addMedia": 1,
-      "group": 1,
-      "image": 2,
-      "label": 8,
-      "screen": 6,
-      "text": 4
-    },
-    "DeserializationLoadTime": 0.2290016,
-    "ErrorCount": 0
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
