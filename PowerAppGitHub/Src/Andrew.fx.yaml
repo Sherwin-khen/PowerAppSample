@@ -18,11 +18,22 @@ Andrew As screen:
         ZIndex: =2
 
     Label5 As label:
-        Height: =390
+        Height: =332
         Size: =100
         Text: ="Sana OK ka Lang"
-        Width: =1027
-        X: =279
-        Y: =355
+        Width: =1108
+        X: =113
+        Y: =180
         ZIndex: =3
+
+    TextInput3_1 As text:
+        BorderStyle: =BorderStyle.None
+        Default: ="WAMPIPTI LANG ANG LAGAY"
+        FontWeight: =FontWeight.Bold
+        Height: =114
+        Size: =35
+        Width: =1176
+        X: =45
+        Y: =524
+        ZIndex: =4
 
