@@ -34,3 +34,11 @@ Andrea As screen:
         Y: =636
         ZIndex: =4
 
+    Label11 As label:
+        Height: =55
+        Text: ="Ay, wala pa ba?"
+        Width: =187
+        X: =1070
+        Y: =663
+        ZIndex: =5
+
