@@ -26,6 +26,31 @@
     "dependents": [],
     "id": "277835e5-17ec-4e00-bb34-a0b1537a2f81"
   },
+  "56cd3b3e-143e-4c5a-8d53-a20171a114e8": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://fujitsu.sharepoint.com/teams/Global-f1dd7691": {
+        "dataSources": {
+          "Test_db ken": {
+            "tableName": "819ab4ad-6897-4283-96b8-d2ca2c07a94b"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Test_db ken"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "56cd3b3e-143e-4c5a-8d53-a20171a114e8"
+  },
   "58955732-498b-4a38-9494-c411aea9131a": {
     "connectionParameters": {
       "sku": "Enterprise"
