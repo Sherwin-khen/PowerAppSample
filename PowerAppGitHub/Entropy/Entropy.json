@@ -1,41 +1,8 @@
 {
   "ComponentIndexes": {},
-  "ControlUniqueIds": {
-    "AddMediaButton1": 30,
-    "AddMediaButton2": 7,
-    "AddMediaWithImage1": 31,
-    "AddMediaWithImage2": 9,
-    "Andrea": 3,
-    "Andrew": 10,
-    "App": 1,
-    "Hans": 14,
-    "Image1": 12,
-    "Label1": 23,
-    "Label2": 15,
-    "Label2_1": 16,
-    "Label2_2": 17,
-    "Label2_3": 18,
-    "Label2_4": 19,
-    "Label3": 27,
-    "Label4": 28,
-    "Label5": 13,
-    "Label6": 21,
-    "Label7": 25,
-    "Label8": 8,
-    "Label9": 32,
-    "Noriel": 20,
-    "Sherwin": 22,
-    "Sussen": 26,
-    "TextInput1": 4,
-    "TextInput1_1": 6,
-    "TextInput2": 24,
-    "TextInput3": 11,
-    "UploadedImage1": 29,
-    "UploadedImage2": 5
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/20/2022 01:18:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -44,74 +11,12 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
-  "OrderGroupControls": {
-    "AddMediaWithImage1": {
-      "AddMediaButton1": 1,
-      "UploadedImage1": 0
-    },
-    "AddMediaWithImage2": {
-      "AddMediaButton2": 1,
-      "UploadedImage2": 0
-    }
-  },
+  "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "addMedia": 2,
-    "image": 1,
-    "label": 3,
-    "text": 0
-  },
-  "PublishOrderIndices": {
-    "AddMediaButton1": 29,
-    "AddMediaButton2": 5,
-    "AddMediaWithImage1": 30,
-    "AddMediaWithImage2": 7,
-    "Andrea": 1,
-    "Andrew": 8,
-    "App": 0,
-    "Hans": 13,
-    "Image1": 10,
-    "Label1": 22,
-    "Label2": 14,
-    "Label2_1": 15,
-    "Label2_2": 16,
-    "Label2_3": 17,
-    "Label2_4": 18,
-    "Label3": 26,
-    "Label4": 27,
-    "Label5": 11,
-    "Label6": 20,
-    "Label7": 24,
-    "Label8": 6,
-    "Label9": 0,
-    "Noriel": 19,
-    "Sherwin": 21,
-    "Sussen": 25,
-    "TextInput1": 2,
-    "TextInput1_1": 4,
-    "TextInput2": 23,
-    "TextInput3": 9,
-    "UploadedImage1": 28,
-    "UploadedImage2": 3
-  },
-  "ResourcesJsonIndices": {
-    "Image-SampleImage": 0
-  },
+  "OrderXMLTemplate": {},
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.1195322,
-    "ControlCount": {
-      "addMedia": 2,
-      "group": 2,
-      "image": 3,
-      "label": 12,
-      "screen": 6,
-      "text": 4
-    },
-    "DeserializationLoadTime": 0.5480855,
-    "ErrorCount": 0
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
