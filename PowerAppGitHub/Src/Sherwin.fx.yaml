@@ -18,14 +18,14 @@ Sherwin As screen:
         ZIndex: =2
 
     Gallery1 As gallery.galleryVertical:
-        Fill: =RGBA(168, 0, 0, 1)
+        Fill: =RGBA(46, 255, 231, 1)
         Height: =535
         Items: ='Test_db ken'
         Layout: =Layout.Vertical
         TemplateSize: =74
         Width: =735
-        X: =368
-        Y: =232
+        X: =369
+        Y: =219
         ZIndex: =3
 
         Label6 As label:
