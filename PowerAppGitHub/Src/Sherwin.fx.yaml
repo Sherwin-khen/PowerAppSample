@@ -17,3 +17,11 @@ Sherwin As screen:
         Y: =212
         ZIndex: =2
 
+    Label4 As label:
+        Height: =56
+        Text: ="Andrew's Lagay"
+        Width: =196
+        X: =511
+        Y: =156
+        ZIndex: =3
+
