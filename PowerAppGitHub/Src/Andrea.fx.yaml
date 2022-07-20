@@ -1,2 +1,20 @@
 Andrea As screen:
 
+    TextInput1 As text:
+        Default: ="Pogi ni Andrew"
+        Height: =42
+        Mode: =TextMode.MultiLine
+        Width: =652
+        X: =279
+        Y: =201
+        ZIndex: =1
+
+    TextInput1_1 As text:
+        Default: ="Pogi ni Andrew"
+        Height: =42
+        Mode: =TextMode.MultiLine
+        Width: =652
+        X: =279
+        Y: =295
+        ZIndex: =2
+
