@@ -26,3 +26,12 @@ Hans As screen:
         Y: =234
         ZIndex: =3
 
+    Label2_3 As label:
+        Height: =351
+        Size: =50
+        Text: ="Nag lagay ako ng bago."
+        Width: =1178
+        X: =96
+        Y: =417
+        ZIndex: =4
+
