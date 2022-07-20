@@ -1,22 +1,22 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueIds": {
-    "AddMediaButton1": 6,
-    "AddMediaWithImage1": 7,
-    "Andrea": 9,
-    "Andrew": 10,
+    "AddMediaButton1": 9,
+    "AddMediaWithImage1": 10,
+    "Andrea": 13,
+    "Andrew": 3,
     "App": 1,
-    "Hans": 8,
-    "Label1": 12,
-    "Label2": 13,
-    "Noriel": 3,
-    "Sherwin": 11,
-    "Sussen": 4,
-    "UploadedImage1": 5
+    "Hans": 11,
+    "Label1": 5,
+    "Label2": 12,
+    "Noriel": 6,
+    "Sherwin": 4,
+    "Sussen": 7,
+    "UploadedImage1": 8
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/20/2022 00:11:25",
+  "HeaderLastSavedDateTimeUTC": "07/20/2022 00:17:10",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -34,9 +34,9 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "addMedia": 1,
-    "image": 0,
-    "label": 2
+    "addMedia": 2,
+    "image": 1,
+    "label": 0
   },
   "PublishOrderIndices": {
     "AddMediaButton1": 2,
@@ -58,15 +58,15 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0920398,
+    "AnalysisLoadTime": 0.0922226,
     "ControlCount": {
       "addMedia": 1,
       "group": 1,
       "image": 1,
-      "label": 1,
+      "label": 2,
       "screen": 6
     },
-    "DeserializationLoadTime": 0.4654026,
+    "DeserializationLoadTime": 0.6466947,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
