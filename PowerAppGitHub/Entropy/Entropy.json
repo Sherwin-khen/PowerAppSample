@@ -1,21 +1,22 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueIds": {
-    "AddMediaButton1": 11,
-    "AddMediaWithImage1": 12,
-    "Andrea": 6,
-    "Andrew": 7,
+    "AddMediaButton1": 6,
+    "AddMediaWithImage1": 7,
+    "Andrea": 9,
+    "Andrew": 10,
     "App": 1,
-    "Hans": 5,
-    "Label1": 9,
+    "Hans": 8,
+    "Label1": 12,
+    "Label2": 13,
     "Noriel": 3,
-    "Sherwin": 8,
+    "Sherwin": 11,
     "Sussen": 4,
-    "UploadedImage1": 10
+    "UploadedImage1": 5
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/19/2022 09:02:31",
+  "HeaderLastSavedDateTimeUTC": "07/20/2022 00:11:08",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -44,7 +45,8 @@
     "Andrew": 0,
     "App": 0,
     "Hans": 0,
-    "Label1": 3,
+    "Label1": 4,
+    "Label2": 3,
     "Noriel": 0,
     "Sherwin": 0,
     "Sussen": 0,
@@ -56,12 +58,15 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0953398,
+    "AnalysisLoadTime": 0.0920398,
     "ControlCount": {
+      "addMedia": 1,
+      "group": 1,
+      "image": 1,
       "label": 1,
       "screen": 6
     },
-    "DeserializationLoadTime": 0.5863348,
+    "DeserializationLoadTime": 0.4654026,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

@@ -1,2 +1,10 @@
 Hans As screen:
 
+    Label2 As label:
+        Height: =351
+        Size: =100
+        Text: ="はんす"
+        Width: =433
+        X: =402
+        ZIndex: =1
+
