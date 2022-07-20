@@ -15,11 +15,12 @@
     "Sherwin": 9,
     "Sussen": 11,
     "TextInput1": 20,
+    "TextInput1_1": 21,
     "UploadedImage1": 13
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/20/2022 00:40:53",
+  "HeaderLastSavedDateTimeUTC": "07/20/2022 00:41:39",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -57,6 +58,7 @@
     "Sherwin": 8,
     "Sussen": 10,
     "TextInput1": 0,
+    "TextInput1_1": 0,
     "UploadedImage1": 12
   },
   "ResourcesJsonIndices": {
@@ -71,7 +73,8 @@
       "group": 1,
       "image": 1,
       "label": 4,
-      "screen": 6
+      "screen": 6,
+      "text": 1
     },
     "DeserializationLoadTime": 1.044022,
     "ErrorCount": 0
