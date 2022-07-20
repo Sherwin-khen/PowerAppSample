@@ -1,7 +1,7 @@
 Andrea As screen:
 
     TextInput1 As text:
-        Default: ="Text input"
+        Default: ="Pogi ni Andrew"
         Height: =232
         Mode: =TextMode.MultiLine
         Width: =652
