@@ -1,30 +1,8 @@
 {
   "ComponentIndexes": {},
-  "ControlUniqueIds": {
-    "AddMediaButton1": 10,
-    "AddMediaWithImage1": 11,
-    "Andrea": 12,
-    "Andrew": 15,
-    "App": 1,
-    "Hans": 17,
-    "Label1": 5,
-    "Label2": 18,
-    "Label2_1": 19,
-    "Label2_2": 20,
-    "Label3": 8,
-    "Label4": 21,
-    "Noriel": 3,
-    "Sherwin": 4,
-    "Sussen": 7,
-    "TextInput1": 13,
-    "TextInput1_1": 14,
-    "TextInput2": 6,
-    "TextInput3": 16,
-    "UploadedImage1": 9
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/20/2022 01:04:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -33,59 +11,12 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
-  "OrderGroupControls": {
-    "AddMediaWithImage1": {
-      "AddMediaButton1": 1,
-      "UploadedImage1": 0
-    }
-  },
+  "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "addMedia": 3,
-    "image": 2,
-    "label": 0,
-    "text": 1
-  },
-  "PublishOrderIndices": {
-    "AddMediaButton1": 17,
-    "AddMediaWithImage1": 18,
-    "Andrea": 1,
-    "Andrew": 4,
-    "App": 0,
-    "Hans": 6,
-    "Label1": 12,
-    "Label2": 7,
-    "Label2_1": 8,
-    "Label2_2": 9,
-    "Label3": 15,
-    "Label4": 0,
-    "Noriel": 10,
-    "Sherwin": 11,
-    "Sussen": 14,
-    "TextInput1": 2,
-    "TextInput1_1": 3,
-    "TextInput2": 13,
-    "TextInput3": 0,
-    "UploadedImage1": 16
-  },
-  "ResourcesJsonIndices": {
-    "Image-SampleImage": 0
-  },
+  "OrderXMLTemplate": {},
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.1577862,
-    "ControlCount": {
-      "addMedia": 1,
-      "group": 1,
-      "image": 1,
-      "label": 5,
-      "screen": 6,
-      "text": 4
-    },
-    "DeserializationLoadTime": 0.5456387,
-    "ErrorCount": 0
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
