@@ -13,8 +13,8 @@ Hans As screen:
         Size: =100
         Text: ="testing"
         Width: =433
-        X: =108
-        Y: =234
+        X: =63
+        Y: =90
         ZIndex: =2
 
     Label2_2 As label:
@@ -22,8 +22,8 @@ Hans As screen:
         Size: =100
         Text: ="かめんりでる"
         Width: =631
-        X: =595
-        Y: =234
+        X: =735
+        Y: =171
         ZIndex: =3
 
     Label2_3 As label:
@@ -34,4 +34,13 @@ Hans As screen:
         X: =96
         Y: =417
         ZIndex: =4
+
+    Label2_4 As label:
+        Height: =266
+        Size: =50
+        Text: ="bagong bago"
+        Width: =442
+        X: =903
+        Y: =502
+        ZIndex: =5
 
