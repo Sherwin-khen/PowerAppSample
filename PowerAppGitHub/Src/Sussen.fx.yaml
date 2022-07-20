@@ -30,3 +30,11 @@ Sussen As screen:
         Y: =40
         ZIndex: =4
 
+    Label4 As label:
+        Height: =48
+        Text: ="maglagay ng bagong label... sana all hahahaha"
+        Width: =424
+        X: =57
+        Y: =660
+        ZIndex: =5
+
