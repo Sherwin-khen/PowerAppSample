@@ -6,24 +6,25 @@ Sherwin As screen:
         Size: =90
         Text: ="Monka"
         Width: =1238
-        X: =33
-        Y: =114
+        X: =36
+        Y: =23
         ZIndex: =1
 
     TextInput2 As text:
         Default: ="Text input"
         Height: =32
-        X: =512
-        Y: =172
+        X: =516
+        Y: =84
         ZIndex: =2
 
     Gallery1 As gallery.galleryVertical:
-        Height: =213
-        Items: =team_andrew
+        Height: =535
+        Items: ='Test_db ken'
         Layout: =Layout.Vertical
         TemplateSize: =74
+        Width: =735
         X: =272
-        Y: =462
+        Y: =232
         ZIndex: =3
 
         Label6 As label:
@@ -37,7 +38,21 @@ Sherwin As screen:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Name
             Width: =326
-            X: =213
-            Y: =40
+            X: =125
+            Y: =34
             ZIndex: =2
+
+        Label11 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Feedback
+            X: =301
+            Y: =34
+            ZIndex: =3
+
+        Label12 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Description
+            X: =471
+            Y: =34
+            ZIndex: =4
 
