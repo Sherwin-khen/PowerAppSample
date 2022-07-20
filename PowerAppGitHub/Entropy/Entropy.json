@@ -1,8 +1,31 @@
 {
   "ComponentIndexes": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "AddMediaButton1": 21,
+    "AddMediaWithImage1": 22,
+    "Andrea": 3,
+    "Andrew": 6,
+    "App": 1,
+    "Hans": 8,
+    "Label1": 15,
+    "Label2": 9,
+    "Label2_1": 10,
+    "Label2_2": 11,
+    "Label2_3": 12,
+    "Label3": 18,
+    "Label4": 19,
+    "Noriel": 13,
+    "Sherwin": 14,
+    "Sussen": 17,
+    "TextInput1": 4,
+    "TextInput1_1": 5,
+    "TextInput2": 16,
+    "TextInput3": 7,
+    "UploadedImage1": 20
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "07/20/2022 01:11:10",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -11,12 +34,60 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "AddMediaWithImage1": {
+      "AddMediaButton1": 1,
+      "UploadedImage1": 0
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "OrderXMLTemplate": {
+    "addMedia": 3,
+    "image": 2,
+    "label": 1,
+    "text": 0
+  },
+  "PublishOrderIndices": {
+    "AddMediaButton1": 20,
+    "AddMediaWithImage1": 21,
+    "Andrea": 1,
+    "Andrew": 4,
+    "App": 0,
+    "Hans": 7,
+    "Label1": 14,
+    "Label2": 8,
+    "Label2_1": 9,
+    "Label2_2": 10,
+    "Label2_3": 11,
+    "Label3": 17,
+    "Label4": 18,
+    "Noriel": 12,
+    "Sherwin": 13,
+    "Sussen": 16,
+    "TextInput1": 2,
+    "TextInput1_1": 3,
+    "TextInput2": 15,
+    "TextInput3": 5,
+    "UploadedImage1": 19
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0858301,
+    "ControlCount": {
+      "addMedia": 1,
+      "group": 1,
+      "image": 1,
+      "label": 7,
+      "screen": 6,
+      "text": 4
+    },
+    "DeserializationLoadTime": 0.5268926,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }
