@@ -106,7 +106,7 @@
         "Name": "HamburgerIcon_2",
         "Parent": "LeftNav_1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 271,
+        "PublishOrderIndex": 305,
         "Rules": [
           {
             "Category": "Design",
@@ -315,7 +315,7 @@
             "Name": "galleryTemplate1_4",
             "Parent": "GalNav_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 273,
+            "PublishOrderIndex": 307,
             "Rules": [
               {
                 "Category": "Design",
@@ -457,7 +457,7 @@
             "Name": "BtnClick_4",
             "Parent": "GalNav_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 274,
+            "PublishOrderIndex": 308,
             "Rules": [
               {
                 "Category": "Data",
@@ -755,7 +755,7 @@
             "Name": "RecShape_4",
             "Parent": "GalNav_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 275,
+            "PublishOrderIndex": 309,
             "Rules": [
               {
                 "Category": "Design",
@@ -964,7 +964,7 @@
             "Name": "IconMenu_2",
             "Parent": "GalNav_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 276,
+            "PublishOrderIndex": 310,
             "Rules": [
               {
                 "Category": "Design",
@@ -1238,7 +1238,7 @@
             "Name": "LblMenu_4",
             "Parent": "GalNav_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 277,
+            "PublishOrderIndex": 311,
             "Rules": [
               {
                 "Category": "Data",
@@ -1525,7 +1525,7 @@
                 "Name": "galleryTemplate1_5",
                 "Parent": "GalSubMenu_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 279,
+                "PublishOrderIndex": 313,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1665,7 +1665,7 @@
                 "Name": "LblMenu_5",
                 "Parent": "GalSubMenu_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 280,
+                "PublishOrderIndex": 314,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2047,7 +2047,7 @@
                 "Name": "BtnClick_5",
                 "Parent": "GalSubMenu_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 281,
+                "PublishOrderIndex": 315,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2352,7 +2352,7 @@
                 "Name": "RecShape_5",
                 "Parent": "GalSubMenu_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 282,
+                "PublishOrderIndex": 316,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2550,7 +2550,7 @@
             "Name": "GalSubMenu_2",
             "Parent": "GalNav_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 278,
+            "PublishOrderIndex": 312,
             "Rules": [
               {
                 "Category": "Data",
@@ -2794,7 +2794,7 @@
         "Name": "GalNav_2",
         "Parent": "LeftNav_1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 272,
+        "PublishOrderIndex": 306,
         "Rules": [
           {
             "Category": "Data",

@@ -337,14 +337,14 @@ Resource As screen:
         Y: =88
         ZIndex: =19
 
-        Rectangle5_1 As rectangle:
+        ResRoleAddModalGryBG As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(60, 60, 60, 0.5)
             Height: =768
             Width: =1366
             ZIndex: =11
 
-        Rectangle6_1 As rectangle:
+        ResRoleAddRoleModalBG As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =632
@@ -353,7 +353,7 @@ Resource As screen:
             Y: =65
             ZIndex: =12
 
-        Rectangle7_1 As rectangle:
+        ResRoleAddRoleTitleBG As rectangle:
             BorderColor: =RGBA(254, 1, 1, 1)
             Fill: =RGBA(254, 1, 1, 1)
             Height: =43
@@ -362,7 +362,7 @@ Resource As screen:
             Y: =65
             ZIndex: =13
 
-        Label7_1 As label:
+        ResRoleAddRoleLbl As label:
             Align: =Align.Center
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
@@ -377,7 +377,7 @@ Resource As screen:
             Y: =65
             ZIndex: =14
 
-        Form2_1 As form:
+        ResRoleAddModalForm As form:
             BorderColor: =RGBA(131, 24, 75, 1)
             DataSource: |-
                 ='PIP: Resource Role'
@@ -869,7 +869,7 @@ Resource As screen:
                     Y: =DataCardValue8_1.Y + DataCardValue8_1.Height
                     ZIndex: =3
 
-        Button3_2 As button:
+        ResRoleAddModalClear As button:
             BorderThickness: =0
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -890,7 +890,7 @@ Resource As screen:
             Y: =631
             ZIndex: =16
 
-        Button3_3 As button:
+        ResRoleAddModalSave As button:
             BorderThickness: =0
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
