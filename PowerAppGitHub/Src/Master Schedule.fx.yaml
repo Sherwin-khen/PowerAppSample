@@ -1,5 +1,6 @@
 "'Master Schedule' As screen":
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     Container1_4 As groupContainer.manualLayoutContainer:
         Height: =723
@@ -9,7 +10,7 @@
         ZIndex: =1
 
         Label1_5 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -29,14 +30,14 @@
         ZIndex: =12
 
         Rectangle5 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(60, 60, 60, 0.5)
             Height: =768
             Width: =1366
             ZIndex: =4
 
         Rectangle6 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =637
             Width: =563
@@ -55,7 +56,7 @@
 
         Label7 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
@@ -67,7 +68,7 @@
             ZIndex: =7
 
         Form2 As form:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             DataSource: |-
                 ='PIP: Resource Role'
             Height: =536
@@ -121,9 +122,9 @@
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
                     Height: =27
-                    HoverBorderColor: =RGBA(32, 54, 71, 1)
+                    HoverBorderColor: =RGBA(131, 24, 75, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(205, 209, 213, 1)
+                    HoverFill: =RGBA(255, 211, 205, 1)
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
@@ -206,7 +207,7 @@
                     ChevronBackground: =RGBA(128, 128, 128, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                     ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverBackground: =ColorFade(RGBA(211, 66, 9, 1), -20%)
                     ChevronHoverFill: =RGBA(255, 255, 255, 1)
                     DefaultSelectedItems: =Parent.Default
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -216,16 +217,16 @@
                     DisplayMode: =Parent.DisplayMode
                     Height: =37
                     HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(205, 209, 213, 1)
+                    HoverFill: =RGBA(255, 211, 205, 1)
                     Items: |-
                         =Choices([@'PIP: Resource Role'].Role)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(32, 54, 71, 1)
+                    PressedFill: =RGBA(131, 24, 75, 1)
                     SearchFields: =["Value"]
                     SearchItems: |-
                         =Choices('PIP: Resource Role'.Role,DataCardValue2.SearchText)
-                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    SelectionFill: =RGBA(211, 66, 9, 1)
                     SelectMultiple: =false
                     Size: =13
                     Tooltip: =Parent.DisplayName
@@ -297,9 +298,9 @@
                     DisplayMode: =Parent.DisplayMode
                     FocusedBorderThickness: =4
                     Height: =37
-                    HoverBorderColor: =RGBA(32, 54, 71, 1)
+                    HoverBorderColor: =RGBA(131, 24, 75, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(205, 209, 213, 1)
+                    HoverFill: =RGBA(255, 211, 205, 1)
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
@@ -364,7 +365,7 @@
 
                 DataCardValue4 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                    CalendarHeaderFill: =RGBA(211, 66, 9, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DefaultDate: =Parent.Default
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -373,12 +374,12 @@
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     Height: =33
-                    HoverDateFill: =RGBA(205, 209, 213, 1)
-                    IconBackground: =RGBA(100, 118, 132, 1)
+                    HoverDateFill: =RGBA(255, 211, 205, 1)
+                    IconBackground: =RGBA(211, 66, 9, 1)
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SelectedDateFill: =RGBA(100, 118, 132, 1)
+                    SelectedDateFill: =RGBA(211, 66, 9, 1)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
                     Width: =472
@@ -437,7 +438,7 @@
 
                 DataCardValue7 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                    CalendarHeaderFill: =RGBA(211, 66, 9, 1)
                     Color: =RGBA(128, 128, 128, 1)
                     DefaultDate: =Parent.Default
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -446,12 +447,12 @@
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     Height: =33
-                    HoverDateFill: =RGBA(205, 209, 213, 1)
-                    IconBackground: =RGBA(100, 118, 132, 1)
+                    HoverDateFill: =RGBA(255, 211, 205, 1)
+                    IconBackground: =RGBA(211, 66, 9, 1)
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SelectedDateFill: =RGBA(100, 118, 132, 1)
+                    SelectedDateFill: =RGBA(211, 66, 9, 1)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
                     Width: =472
@@ -523,9 +524,9 @@
                     DisplayMode: =Parent.DisplayMode
                     FocusedBorderThickness: =4
                     Height: =60
-                    HoverBorderColor: =RGBA(32, 54, 71, 1)
+                    HoverBorderColor: =RGBA(131, 24, 75, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
-                    HoverFill: =RGBA(205, 209, 213, 1)
+                    HoverFill: =RGBA(255, 211, 205, 1)
                     MaxLength: =Parent.MaxLength
                     Mode: =TextMode.MultiLine
                     PaddingLeft: =5
@@ -567,7 +568,7 @@
             FontWeight: =FontWeight.Semibold
             Height: =44
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
@@ -588,7 +589,7 @@
             FontWeight: =FontWeight.Semibold
             Height: =43
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
@@ -601,7 +602,7 @@
             ZIndex: =10
 
         ResRoleClose As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)

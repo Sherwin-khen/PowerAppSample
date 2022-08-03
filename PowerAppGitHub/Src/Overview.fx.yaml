@@ -1,32 +1,1641 @@
 Overview As screen:
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
-
-    Canvas2 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =630
-        Width: =1296
-        X: =69
-        Y: =138
-        ZIndex: =5
-
-        "'DATA OVERVIEW' As dataCard":
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =1129
-            Width: =1296
-            X: =0
-            Y: =0
-            ZIndex: =1
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     Label3 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Size: =20
         Text: ="OVERVIEW"
-        X: =123
-        Y: =71
+        X: =91
+        Y: =45
         ZIndex: =8
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =590
+        Width: =1202
+        X: =120
+        Y: =120
+        ZIndex: =10
+
+        FormViewer1 As formViewer:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DataSource: |-
+                ='ORR: Project Info'
+            Height: =256
+            Width: =1202
+            ZIndex: =1
+
+            "'ORR Head Code_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.'ORR Head Code'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"Title")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+                DataCardKey44 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue44 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey44.Y + DataCardKey44.Height + 5
+                    ZIndex: =2
+
+            "'Project Name_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ProjectName"
+                Default: =ThisItem.'Project Name'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ProjectName")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =1
+                Y: =0
+                ZIndex: =2
+
+                DataCardKey45 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue45 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey45.Y + DataCardKey45.Height + 5
+                    ZIndex: =2
+
+            "'Opportunity Rank_DataCard2' As typedDataCard.comboBoxViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="OpportunityRank"
+                Default: =ThisItem.'Opportunity Rank'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"OpportunityRank")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue46.Selected
+                Width: =400
+                X: =2
+                Y: =0
+                ZIndex: =2
+
+                DataCardKey46 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue46 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(100, 118, 132, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DefaultSelectedItems: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    Items: |-
+                        =Choices([@'ORR: Project Info'].OpportunityRank)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: |-
+                        =Choices('ORR: Project Info'.OpportunityRank,DataCardValue46.SearchText)
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    SelectMultiple: =false
+                    Size: =13
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey46.Y + DataCardKey46.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage44 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue46.Y + DataCardValue46.Height
+                    ZIndex: =3
+
+                StarVisible39 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey46.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey46.Y
+                    ZIndex: =4
+
+            "'Opportunity Complexity_DataCard2' As typedDataCard.comboBoxViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="OpportunityComplexity"
+                Default: =ThisItem.'Opportunity Complexity'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"OpportunityComplexity")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue47.Selected
+                Width: =400
+                X: =0
+                Y: =1
+                ZIndex: =2
+
+                DataCardKey47 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue47 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(100, 118, 132, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DefaultSelectedItems: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    Items: |-
+                        =Choices([@'ORR: Project Info'].OpportunityComplexity)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: |-
+                        =Choices('ORR: Project Info'.OpportunityComplexity,DataCardValue47.SearchText)
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    SelectMultiple: =false
+                    Size: =13
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey47.Y + DataCardKey47.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage45 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue47.Y + DataCardValue47.Height
+                    ZIndex: =3
+
+                StarVisible40 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey47.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey47.Y
+                    ZIndex: =4
+
+            "'Opportuinty Risk_DataCard2' As typedDataCard.comboBoxViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="OpportuintyRisk"
+                Default: =ThisItem.'Opportuinty Risk'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"OpportuintyRisk")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue48.Selected
+                Width: =400
+                X: =1
+                Y: =1
+                ZIndex: =2
+
+                DataCardKey48 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue48 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(100, 118, 132, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DefaultSelectedItems: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    Items: |-
+                        =Choices([@'ORR: Project Info'].OpportuintyRisk)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: |-
+                        =Choices('ORR: Project Info'.OpportuintyRisk,DataCardValue48.SearchText)
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    SelectMultiple: =false
+                    Size: =13
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey48.Y + DataCardKey48.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage46 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue48.Y + DataCardValue48.Height
+                    ZIndex: =3
+
+                StarVisible41 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey48.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey48.Y
+                    ZIndex: =4
+
+            "' Operation Manager_DataCard2' As typedDataCard.comboBoxMultiSelectViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="OperationManager"
+                Default: =ThisItem.' Operation Manager'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"OperationManager")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue49.SelectedItems
+                Width: =400
+                X: =2
+                Y: =1
+                ZIndex: =2
+
+                DataCardKey49 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue49 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(100, 118, 132, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DefaultSelectedItems: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    Items: |-
+                        =Choices([@'ORR: Project Info'].OperationManager)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: |-
+                        =Choices('ORR: Project Info'.OperationManager,DataCardValue49.SearchText)
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    Size: =13
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey49.Y + DataCardKey49.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage47 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue49.Y + DataCardValue49.Height
+                    ZIndex: =3
+
+                StarVisible42 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey49.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey49.Y
+                    ZIndex: =4
+
+            "'Project Manager_DataCard2' As typedDataCard.comboBoxMultiSelectViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ProjectManager0"
+                Default: =ThisItem.'Project Manager'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ProjectManager0")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue50.SelectedItems
+                Width: =400
+                X: =0
+                Y: =2
+                ZIndex: =2
+
+                DataCardKey50 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue50 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(100, 118, 132, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DefaultSelectedItems: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    Items: |-
+                        =Choices([@'ORR: Project Info'].ProjectManager0)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: |-
+                        =Choices('ORR: Project Info'.ProjectManager0,DataCardValue50.SearchText)
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    Size: =13
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey50.Y + DataCardKey50.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage48 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue50.Y + DataCardValue50.Height
+                    ZIndex: =3
+
+                StarVisible43 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =DataCardKey50.Height
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey50.Y
+                    ZIndex: =4
+
+            "'GDC Scope_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="GDCScope"
+                Default: =ThisItem.'GDC Scope'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"GDCScope")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =1
+                Y: =2
+                ZIndex: =2
+
+                DataCardKey51 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue51 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey51.Y + DataCardKey51.Height + 5
+                    ZIndex: =2
+
+            "'Opportunity Date_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="OpportunityDate"
+                Default: =ThisItem.'Opportunity Date'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"OpportunityDate")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =2
+                Y: =2
+                ZIndex: =2
+
+                DataCardKey52 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue52 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey52.Y + DataCardKey52.Height + 5
+                    ZIndex: =2
+
+            "'List Of Service ID_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ListOfServiceID"
+                Default: =ThisItem.'List Of Service ID'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ListOfServiceID")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =0
+                Y: =3
+                ZIndex: =2
+
+                DataCardKey53 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue53 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey53.Y + DataCardKey53.Height + 5
+                    ZIndex: =2
+
+            "'Contract ID_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ContractID"
+                Default: =ThisItem.'Contract ID'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ContractID")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =1
+                Y: =3
+                ZIndex: =2
+
+                DataCardKey54 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue54 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey54.Y + DataCardKey54.Height + 5
+                    ZIndex: =2
+
+            "'Development Model ID_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="DevelopmentModelID"
+                Default: =ThisItem.'Development Model ID'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"DevelopmentModelID")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =2
+                Y: =3
+                ZIndex: =2
+
+                DataCardKey55 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue55 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey55.Y + DataCardKey55.Height + 5
+                    ZIndex: =2
+
+            "'RFQ Date_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="RFQDate"
+                Default: =ThisItem.'RFQ Date'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"RFQDate")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =0
+                Y: =4
+                ZIndex: =2
+
+                DataCardKey56 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue56 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey56.Y + DataCardKey56.Height + 5
+                    ZIndex: =2
+
+            "'Delivery Date _DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="DeliveryDate"
+                Default: =ThisItem.'Delivery Date '
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"DeliveryDate")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =1
+                Y: =4
+                ZIndex: =2
+
+                DataCardKey57 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue57 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey57.Y + DataCardKey57.Height + 5
+                    ZIndex: =2
+
+            "'Customer ID_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="CustomerID"
+                Default: =ThisItem.'Customer ID'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"CustomerID")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =2
+                Y: =4
+                ZIndex: =2
+
+                DataCardKey58 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue58 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey58.Y + DataCardKey58.Height + 5
+                    ZIndex: =2
+
+            "'PO Issuer_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="POIssuer"
+                Default: =ThisItem.'PO Issuer'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"POIssuer")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =0
+                Y: =5
+                ZIndex: =2
+
+                DataCardKey59 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue59 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey59.Y + DataCardKey59.Height + 5
+                    ZIndex: =2
+
+            "'Project Start_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ProjectStart"
+                Default: =ThisItem.'Project Start'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ProjectStart")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =1
+                Y: =5
+                ZIndex: =2
+
+                DataCardKey60 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue60 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey60.Y + DataCardKey60.Height + 5
+                    ZIndex: =2
+
+            "'Project End_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ProjectEnd"
+                Default: =ThisItem.'Project End'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ProjectEnd")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =2
+                Y: =5
+                ZIndex: =2
+
+                DataCardKey61 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue61 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey61.Y + DataCardKey61.Height + 5
+                    ZIndex: =2
+
+            "'GDC ID_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="GDCID"
+                Default: =ThisItem.'GDC ID'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"GDCID")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =0
+                Y: =6
+                ZIndex: =2
+
+                DataCardKey62 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue62 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey62.Y + DataCardKey62.Height + 5
+                    ZIndex: =2
+
+            "'RBU Division_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="RBUDivision"
+                Default: =ThisItem.'RBU Division'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"RBUDivision")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =1
+                Y: =6
+                ZIndex: =2
+
+                DataCardKey63 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue63 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey63.Y + DataCardKey63.Height + 5
+                    ZIndex: =2
+
+            Industry_DataCard2 As typedDataCard.textualViewCard:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Industry"
+                Default: =ThisItem.Industry
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"Industry")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =400
+                X: =2
+                Y: =6
+                ZIndex: =2
+
+                DataCardKey64 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue64 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey64.Y + DataCardKey64.Height + 5
+                    ZIndex: =2
+
+            BGBU_DataCard2 As typedDataCard.textualViewCard:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="BGBU"
+                Default: =ThisItem.BGBU
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"BGBU")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =0
+                Y: =7
+                ZIndex: =2
+
+                DataCardKey65 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue65 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey65.Y + DataCardKey65.Height + 5
+                    ZIndex: =2
+
+            "'Project Overview_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ProjectOverview"
+                Default: =ThisItem.'Project Overview'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ProjectOverview")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =1
+                Y: =7
+                ZIndex: =2
+
+                DataCardKey66 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue66 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                    ZIndex: =2
+
+            "'If Approved With Condition_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="IfApprovedWithCondition"
+                Default: =ThisItem.'If Approved With Condition'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"IfApprovedWithCondition")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =2
+                Y: =7
+                ZIndex: =2
+
+                DataCardKey67 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue67 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey67.Y + DataCardKey67.Height + 5
+                    ZIndex: =2
+
+            "'Development Model_DataCard3' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="DevelopmentModel"
+                Default: =ThisItem.'Development Model'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"DevelopmentModel")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =0
+                Y: =8
+                ZIndex: =2
+
+                DataCardKey68 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue68 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey68.Y + DataCardKey68.Height + 5
+                    ZIndex: =2
+
+            "'Development Language_DataCard3' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="DevelopmentLanguage"
+                Default: =ThisItem.'Development Language'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"DevelopmentLanguage")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =1
+                Y: =8
+                ZIndex: =2
+
+                DataCardKey69 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue69 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                    ZIndex: =2
+
+            "'Estimated Project Size_DataCard3' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="EstimatedProjectSize"
+                Default: =ThisItem.'Estimated Project Size'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"EstimatedProjectSize")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =2
+                Y: =8
+                ZIndex: =2
+
+                DataCardKey70 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue70 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey70.Y + DataCardKey70.Height + 5
+                    ZIndex: =2
+
+            "'Order Number_DataCard3' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="OrderNumber"
+                Default: =ThisItem.'Order Number'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"OrderNumber")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =0
+                Y: =9
+                ZIndex: =2
+
+                DataCardKey71 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue71 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey71.Y + DataCardKey71.Height + 5
+                    ZIndex: =2
+
+            "'Process in Charge 1_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ProcessinCharge"
+                Default: =ThisItem.'Process in Charge 1'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ProcessinCharge")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =1
+                Y: =9
+                ZIndex: =2
+
+                DataCardKey72 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue72 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey72.Y + DataCardKey72.Height + 5
+                    ZIndex: =2
+
+            "'Process in Charge 2_DataCard2' As typedDataCard.textualViewCard":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ProcessinCharge2"
+                Default: =ThisItem.'Process in Charge 2'
+                DisplayMode: =DisplayMode.View
+                DisplayName: |-
+                    =DataSourceInfo([@'ORR: Project Info'],DataSourceInfo.DisplayName,"ProcessinCharge2")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =400
+                X: =2
+                Y: =9
+                ZIndex: =2
+
+                DataCardKey73 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =34
+                    Size: =13
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue73 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =13
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey73.Y + DataCardKey73.Height + 5
+                    ZIndex: =2
 
