@@ -1,0 +1,11 @@
+"'Cost Estimation' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Header_9 As Header:
+
+    LeftNav_9 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_9.MenuWidth
+        Y: =Header_9.Height
+        ZIndex: =2
+

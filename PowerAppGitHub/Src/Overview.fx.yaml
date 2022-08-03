@@ -1,0 +1,41 @@
+Overview As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Canvas2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =630
+        Width: =1296
+        X: =69
+        Y: =138
+        ZIndex: =5
+
+        "'DATA OVERVIEW' As dataCard":
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1129
+            Width: =1296
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    LeftNav_2 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_2.MenuWidth
+        Y: =45.17647058823525
+        ZIndex: =6
+
+    Header_2 As Header:
+        ZIndex: =7
+
+    Label3 As label:
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =20
+        Text: ="OVERVIEW"
+        X: =123
+        Y: =71
+        ZIndex: =8
+

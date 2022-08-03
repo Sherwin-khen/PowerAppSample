@@ -1,32 +1,5 @@
 {
-  "277835e5-17ec-4e00-bb34-a0b1537a2f81": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "displayName": "Excel",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1570/1.0.1570.2764/excel/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excel"
-    },
-    "datasets": {
-      "b!Ffv4X_E07EyXBQtx8ah7ekpMIktfKOhMj9VRWVm93ABNyrapOoRXTZbWRLS_uaqC.01C7GD7YSXWRT47CVJWRD2DKH2S76233FM": {
-        "dataSources": {
-          "team_andrew": {
-            "tableName": "team_andrew"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "team_andrew"
-    ],
-    "dependencies": {
-      "fileSource": "58955732-498b-4a38-9494-c411aea9131a"
-    },
-    "dependents": [],
-    "id": "277835e5-17ec-4e00-bb34-a0b1537a2f81"
-  },
-  "56cd3b3e-143e-4c5a-8d53-a20171a114e8": {
+  "62e504cf-eb3f-4ddc-ac47-b63f10fe753a": {
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -38,34 +11,41 @@
     "datasets": {
       "https://fujitsu.sharepoint.com/teams/Global-f1dd7691": {
         "dataSources": {
-          "Test_db ken": {
-            "tableName": "819ab4ad-6897-4283-96b8-d2ca2c07a94b"
+          "ORR: Project Info": {
+            "tableName": "0173795b-1d3b-4554-a345-173204011c8e"
+          },
+          "PIP: Resource Role": {
+            "tableName": "1ff6ee06-2a5c-45d2-8a2a-3c74599cc797"
           }
         }
       }
     },
     "dataSources": [
-      "Test_db ken"
+      "ORR: Project Info",
+      "PIP: Resource Role"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "56cd3b3e-143e-4c5a-8d53-a20171a114e8"
+    "id": "62e504cf-eb3f-4ddc-ac47-b63f10fe753a"
   },
-  "58955732-498b-4a38-9494-c411aea9131a": {
+  "a4b0d1b0-3a26-41a3-9627-e64a8e2ccc75": {
     "connectionParameters": {
       "sku": "Enterprise"
     },
     "connectionRef": {
-      "displayName": "OneDrive for Business",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1573/1.0.1573.2770/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
     },
     "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "277835e5-17ec-4e00-bb34-a0b1537a2f81"
+    "dataSources": [
+      "Office365Users"
     ],
-    "id": "58955732-498b-4a38-9494-c411aea9131a"
+    "dependencies": {},
+    "dependents": [],
+    "id": "a4b0d1b0-3a26-41a3-9627-e64a8e2ccc75"
   }
 }

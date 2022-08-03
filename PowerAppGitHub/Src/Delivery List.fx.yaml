@@ -1,0 +1,32 @@
+"'Delivery List' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container1_5 As groupContainer.manualLayoutContainer:
+        Height: =723
+        Width: =1312
+        X: =54
+        Y: =45
+        ZIndex: =1
+
+        Label1_6 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =16
+            Text: ="Delivery List _TEST"
+            Width: =356
+            X: =196
+            ZIndex: =1
+
+    Header_6 As Header:
+        ZIndex: =2
+
+    LeftNav_6 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_6.MenuWidth
+        Y: =46
+        ZIndex: =3
+

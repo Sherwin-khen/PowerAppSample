@@ -1,0 +1,623 @@
+"'Master Schedule' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container1_4 As groupContainer.manualLayoutContainer:
+        Height: =723
+        Width: =1312
+        X: =54
+        Y: =45
+        ZIndex: =1
+
+        Label1_5 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =38
+            Size: =16
+            Text: ="Master Schedule"
+            Width: =261
+            X: =196
+            ZIndex: =1
+
+    Header_5 As Header:
+        ZIndex: =2
+
+    LeftNav_5 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_5.MenuWidth
+        Y: =Header_5.Height
+        ZIndex: =3
+
+    ResRoleAddModal As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =88
+        ZIndex: =12
+
+        Rectangle5 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(60, 60, 60, 0.5)
+            Height: =768
+            Width: =1366
+            ZIndex: =4
+
+        Rectangle6 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =637
+            Width: =563
+            X: =401
+            Y: =131
+            ZIndex: =5
+
+        Rectangle7 As rectangle:
+            BorderColor: =RGBA(254, 1, 1, 1)
+            Fill: =RGBA(254, 1, 1, 1)
+            Height: =44
+            Width: =563
+            X: =401
+            Y: =168
+            ZIndex: =6
+
+        Label7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =16
+            Text: ="Add Role"
+            X: =608
+            Y: =168
+            ZIndex: =7
+
+        Form2 As form:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DataSource: |-
+                ='PIP: Resource Role'
+            Height: =536
+            Width: =563
+            X: =401
+            Y: =212
+            ZIndex: =8
+
+            Title_DataCard1 As typedDataCard.textualEditCard:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.Title
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: |-
+                    =DataSourceInfo([@'PIP: Resource Role'],DataSourceInfo.DisplayName,"Title")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =60
+                MaxLength: |-
+                    =DataSourceInfo([@'PIP: Resource Role'], DataSourceInfo.MaxLength, "Title")
+                Required: =true
+                Update: =DataCardValue1.Text
+                Width: =561
+                X: =0
+                Y: =0
+                ZIndex: =12
+
+                DataCardKey1 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =28
+                    Size: =13
+                    Text: ="ID"
+                    Width: =192
+                    Wrap: =false
+                    X: =46
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Height: =27
+                    HoverBorderColor: =RGBA(32, 54, 71, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =13
+                    Tooltip: =Parent.DisplayName
+                    Width: =192
+                    X: =46
+                    Y: =38
+                    ZIndex: =2
+
+                ErrorMessage1 As label:
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =60
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =293
+                    X: =238
+                    Y: =15
+                    ZIndex: =3
+
+                StarVisible1 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =23
+                    PaddingRight: =2
+                    Size: =13
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =24
+                    Wrap: =false
+                    X: =31
+                    Y: =15
+                    ZIndex: =4
+
+            Role_DataCard1 As typedDataCard.comboBoxEditCard:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Role"
+                Default: =ThisItem.Role
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: |-
+                    =DataSourceInfo([@'PIP: Resource Role'],DataSourceInfo.DisplayName,"Role")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =43
+                Required: =false
+                Update: =DataCardValue2.Selected
+                Width: =561
+                X: =0
+                Y: =1
+                ZIndex: =12
+
+                DataCardKey2 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =33
+                    PaddingLeft: =0
+                    Size: =13
+                    Text: ="Role"
+                    Width: =70
+                    Wrap: =false
+                    X: =46
+                    ZIndex: =1
+
+                DataCardValue2 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =1
+                    ChevronBackground: =RGBA(128, 128, 128, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DefaultSelectedItems: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =37
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    Items: |-
+                        =Choices([@'PIP: Resource Role'].Role)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(32, 54, 71, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: |-
+                        =Choices('PIP: Resource Role'.Role,DataCardValue2.SearchText)
+                    SelectionFill: =RGBA(100, 118, 132, 1)
+                    SelectMultiple: =false
+                    Size: =13
+                    Tooltip: =Parent.DisplayName
+                    Width: =472
+                    X: =46
+                    Y: =33
+                    ZIndex: =2
+
+                ErrorMessage2 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue2.Y + DataCardValue2.Height
+                    ZIndex: =3
+
+            Role_Name_DataCard1 As typedDataCard.textualEditCard:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Role_Name"
+                Default: =ThisItem.Role_Name
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: |-
+                    =DataSourceInfo([@'PIP: Resource Role'],DataSourceInfo.DisplayName,"Role_Name")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =80
+                MaxLength: |-
+                    =DataSourceInfo([@'PIP: Resource Role'], DataSourceInfo.MaxLength, "Role_Name")
+                Required: =false
+                Update: =DataCardValue3.Text
+                Width: =561
+                X: =0
+                Y: =2
+                ZIndex: =12
+
+                DataCardKey3 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =33
+                    PaddingLeft: =0
+                    Size: =13
+                    Text: ="Role Name"
+                    Width: =131
+                    Wrap: =false
+                    X: =46
+                    ZIndex: =1
+
+                DataCardValue3 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    FocusedBorderThickness: =4
+                    Height: =37
+                    HoverBorderColor: =RGBA(32, 54, 71, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =13
+                    Tooltip: =Parent.DisplayName
+                    Width: =472
+                    X: =46
+                    Y: =33
+                    ZIndex: =2
+
+                ErrorMessage3 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue3.Y + DataCardValue3.Height
+                    ZIndex: =3
+
+            Start_Date_DataCard1 As typedDataCard.dateEditCard:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Start_Date"
+                Default: =ThisItem.Start_Date
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: |-
+                    =DataSourceInfo([@'PIP: Resource Role'],DataSourceInfo.DisplayName,"Start_Date")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue4.SelectedDate
+                Width: =561
+                X: =0
+                Y: =3
+                ZIndex: =12
+
+                DataCardKey4 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =33
+                    PaddingLeft: =0
+                    Size: =13
+                    Text: ="Start Date"
+                    Width: =122
+                    Wrap: =false
+                    X: =46
+                    ZIndex: =1
+
+                DataCardValue4 As datepicker:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DefaultDate: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    EndYear: =Year(Today())+100
+                    Height: =33
+                    HoverDateFill: =RGBA(205, 209, 213, 1)
+                    IconBackground: =RGBA(100, 118, 132, 1)
+                    IsEditable: =true
+                    PaddingBottom: =0
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SelectedDateFill: =RGBA(100, 118, 132, 1)
+                    StartYear: =1899
+                    Tooltip: =Parent.DisplayName
+                    Width: =472
+                    X: =46
+                    Y: =33
+                    ZIndex: =2
+
+                ErrorMessage4 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue4.Y + DataCardValue4.Height
+                    ZIndex: =3
+
+            End_Date_DataCard1 As typedDataCard.dateEditCard:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="End_Date"
+                Default: =ThisItem.End_Date
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: |-
+                    =DataSourceInfo([@'PIP: Resource Role'],DataSourceInfo.DisplayName,"End_Date")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue7.SelectedDate
+                Width: =561
+                X: =0
+                Y: =4
+                ZIndex: =12
+
+                DataCardKey7 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =33
+                    PaddingLeft: =0
+                    Size: =13
+                    Text: ="End Date"
+                    Width: =379
+                    Wrap: =false
+                    X: =46
+                    ZIndex: =1
+
+                DataCardValue7 As datepicker:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                    Color: =RGBA(128, 128, 128, 1)
+                    DefaultDate: =Parent.Default
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    EndYear: =Year(Today())+100
+                    Height: =33
+                    HoverDateFill: =RGBA(205, 209, 213, 1)
+                    IconBackground: =RGBA(100, 118, 132, 1)
+                    IsEditable: =true
+                    PaddingBottom: =0
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SelectedDateFill: =RGBA(100, 118, 132, 1)
+                    StartYear: =1899
+                    Tooltip: =Parent.DisplayName
+                    Width: =472
+                    X: =46
+                    Y: =35
+                    ZIndex: =2
+
+                ErrorMessage7 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue7.Y + DataCardValue7.Height
+                    ZIndex: =3
+
+            Key_Role_DataCard1 As typedDataCard.textualEditCard:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Key_Role"
+                Default: =ThisItem.Key_Role
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: |-
+                    =DataSourceInfo([@'PIP: Resource Role'],DataSourceInfo.DisplayName,"Key_Role")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: |-
+                    =DataSourceInfo([@'PIP: Resource Role'], DataSourceInfo.MaxLength, "Key_Role")
+                Required: =false
+                Update: =DataCardValue8.Text
+                Width: =561
+                X: =0
+                Y: =5
+                ZIndex: =12
+
+                DataCardKey8 As label:
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =33
+                    PaddingLeft: =0
+                    Size: =13
+                    Text: ="Key Role"
+                    Width: =189
+                    Wrap: =false
+                    X: =46
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue8 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    FocusedBorderThickness: =4
+                    Height: =60
+                    HoverBorderColor: =RGBA(32, 54, 71, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(205, 209, 213, 1)
+                    MaxLength: =Parent.MaxLength
+                    Mode: =TextMode.MultiLine
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =13
+                    Tooltip: =Parent.DisplayName
+                    Width: =479
+                    X: =46
+                    Y: =43
+                    ZIndex: =2
+
+                ErrorMessage8 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(168, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue8.Y + DataCardValue8.Height
+                    ZIndex: =3
+
+        Button3 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(133, 133, 133, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =44
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =15
+            Text: ="Clear"
+            Width: =128
+            X: =664
+            Y: =724
+            ZIndex: =9
+
+        Button3_1 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(254, 1, 1, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =43
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =15
+            Text: ="Save"
+            Width: =128
+            X: =798
+            Y: =725
+            ZIndex: =10
+
+        ResRoleClose As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =21
+            Icon: =Icon.Cancel
+            Width: =23
+            X: =921
+            Y: =177
+            ZIndex: =11
+

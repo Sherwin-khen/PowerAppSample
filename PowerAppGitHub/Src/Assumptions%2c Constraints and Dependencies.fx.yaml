@@ -1,0 +1,57 @@
+"'Assumptions, Constraints and Dependencies' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container1_2 As groupContainer.manualLayoutContainer:
+        Height: =723
+        Width: =1312
+        X: =54
+        Y: =45
+        ZIndex: =1
+
+        Label1_3 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =16
+            Text: ="Assumptions, Constraints and Dependencies"
+            Width: =487
+            X: =196
+            ZIndex: =1
+
+        Label2 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Size: =13
+            Text: ="Text"
+            Width: =173
+            X: =40
+            Y: =40
+            ZIndex: =2
+
+    Header_3 As Header:
+        ZIndex: =2
+
+    LeftNav_3 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_3.MenuWidth
+        Y: =46
+        ZIndex: =3
+
+    Button4 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        Size: =15
+        Text: ="BOOM"
+        X: =540
+        Y: =236
+        ZIndex: =4
+

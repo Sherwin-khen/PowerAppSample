@@ -1,8 +1,8 @@
 {
   "FormatVersion": "0.24",
   "Header": {
-    "DocVersion": "1.324",
-    "MinVersionToLoad": "1.324",
+    "DocVersion": "1.325",
+    "MinVersionToLoad": "1.325",
     "MSAppStructureVersion": "2.0"
   },
   "Properties": {
@@ -77,21 +77,21 @@
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutHeight": 768,
     "DocumentLayoutLockOrientation": false,
-    "DocumentLayoutMaintainAspectRatio": true,
+    "DocumentLayoutMaintainAspectRatio": false,
     "DocumentLayoutOrientation": "landscape",
     "DocumentLayoutScaleToFit": true,
     "DocumentLayoutWidth": 1366,
     "DocumentType": "App",
     "EnableInstrumentation": false,
-    "FileID": "d86aafd8-eed5-4745-9261-75422b63ab0f",
-    "Id": "d86aafd8-eed5-4745-9261-75422b63ab0f",
+    "FileID": "38363839-4e47-425b-8f06-5c21a97ec78a",
+    "Id": "3767386c-522b-4ab5-a461-d5848749345d",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Github_Sample",
+    "Name": "PIP.msapp",
     "OriginatingVersion": "1.324"
   },
   "PublishInfo": {
-    "AppName": "Github_Sample",
+    "AppName": "PIP",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -102,11 +102,29 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Noriel",
-    "Sussen",
-    "Hans",
-    "Andrea",
-    "Andrew",
-    "Sherwin"
+    "Home",
+    "Overview",
+    "Assumptions, Constraints and Dependencies",
+    "Resource",
+    "Master Schedule",
+    "Delivery List",
+    "Development Environment",
+    "Size and Scope",
+    "Cost Estimation",
+    "Work Calculation Details",
+    "Other Cost",
+    "Test Plan (Overview)",
+    "Test Plan (Indicators)",
+    "Communication Plan",
+    "Work Order Management",
+    "Tailoring Process",
+    "Tailoring Process (Agile)",
+    "Security Plan",
+    "Risk Management",
+    "Configuration Management",
+    "Screen1",
+    "Screen2",
+    "HomePage",
+    "Screen4"
   ]
 }

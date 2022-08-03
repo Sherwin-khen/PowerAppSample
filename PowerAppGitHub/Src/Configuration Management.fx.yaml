@@ -1,0 +1,32 @@
+"'Configuration Management' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container1_6 As groupContainer.manualLayoutContainer:
+        Height: =723
+        Width: =1312
+        X: =54
+        Y: =45
+        ZIndex: =1
+
+        Label1_7 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =16
+            Text: ="Configuration Management"
+            Width: =323
+            X: =196
+            ZIndex: =1
+
+    Header_20 As Header:
+        ZIndex: =2
+
+    LeftNav_20 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_20.MenuWidth
+        Y: =Header_20.Height
+        ZIndex: =3
+

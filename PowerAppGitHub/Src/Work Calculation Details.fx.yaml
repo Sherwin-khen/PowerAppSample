@@ -1,0 +1,11 @@
+"'Work Calculation Details' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Header_10 As Header:
+
+    LeftNav_10 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_10.MenuWidth
+        Y: =Header_10.Height
+        ZIndex: =2
+

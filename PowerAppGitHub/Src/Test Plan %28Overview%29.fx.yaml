@@ -1,0 +1,11 @@
+"'Test Plan (Overview)' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Header_12 As Header:
+
+    LeftNav_12 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_12.MenuWidth
+        Y: =Header_12.Height
+        ZIndex: =2
+

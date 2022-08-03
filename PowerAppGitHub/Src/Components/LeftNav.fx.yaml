@@ -1,0 +1,253 @@
+LeftNav As CanvasComponent:
+    Fill: =RGBA(245, 70, 70, 100)
+    Height: =Max(App.Height, App.MinScreenHeight)-45.17647058823529
+    MenuItems: |-
+        =Table(
+            {
+                MenuLabel: "Home", 
+                MenuIcon: Icon.Home, 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 1,
+                SubMenu: Table(
+                {
+                MenuLabel: "Overview",  
+                MenuScreen: App.ActiveScreen,
+                MenuID: 2
+                },
+                {
+                MenuLabel: "Assumptions, Constraints and Dependencies", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 3
+                },
+                {
+                MenuLabel: "Resource", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 4
+                },
+                {
+                MenuLabel: "Master Schedule", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 5
+                },
+                {
+                MenuLabel: "Delivery List", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 6
+                },
+                {
+                MenuLabel: "Development Environment", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 7
+                },
+                {
+                MenuLabel: "Size and Scope", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 8
+                },
+                {
+                MenuLabel: "Cost Estimation", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 9
+                },
+                {
+                MenuLabel: " Work Calculation Details", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 10
+                },
+                {
+                MenuLabel: "Other Cost", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 11
+                },
+                {
+                MenuLabel: "Test Plan (Overview)", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 12
+                },
+                {
+                MenuLabel: "Test Plan (Indicators)", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 13
+                },
+                {
+                MenuLabel: "Communication Plan", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 14
+                },
+                {
+                MenuLabel: "Work Order Management", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 15
+                },
+                {
+                MenuLabel: "Tailoring Process", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 16
+                },
+                {
+                MenuLabel: "Tailoring Process (Agile)", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 17
+                },
+                {
+                MenuLabel: "Security Plan", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 18
+                },
+                {
+                MenuLabel: "Risk Management", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 19
+                },
+                {
+                MenuLabel: "Configuration Management", 
+                MenuScreen: App.ActiveScreen,
+                MenuID: 20
+                }
+        
+                )
+            }
+        )
+    MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/25,250)
+    Width: =LeftNav.MenuWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HamburgerIcon As icon.Add:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(varOpenMenu,!varOpenMenu)
+        PaddingBottom: =15
+        PaddingLeft: =15
+        PaddingRight: =15
+        PaddingTop: =15
+        Width: =54.64
+        ZIndex: =1
+
+    GalNav As gallery.variableTemplateHeightGallery:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Height: =Parent.Height-HamburgerIcon.Height
+        Items: =LeftNav.MenuItems
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =639
+        Width: =250
+        Y: =HamburgerIcon.Height
+        ZIndex: =2
+
+        IconMenu As icon.Add:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            Icon: =ThisItem.MenuIcon
+            OnSelect: =Select(Parent)
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =35
+            X: =4
+            ZIndex: =1
+
+        LblMenu As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.MenuLabel
+            Width: =183
+            X: =57
+            Y: =4
+            ZIndex: =2
+
+        BtnClick As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =Transparent
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =Transparent
+            OnSelect: =Navigate(ThisItem.MenuScreen,ScreenTransition.Fade)
+            PressedFill: =Transparent
+            Size: =15
+            Text: =""
+            Width: =Parent.TemplateWidth
+            ZIndex: =3
+
+        RecShape As rectangle:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =LblMenu.Height+LblMenu.Y
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.MenuScreen = App.ActiveScreen
+            Width: =4
+            ZIndex: =4
+
+        GalSubMenu As gallery.variableTemplateHeightGallery:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =563
+            Items: |
+                =ThisItem.SubMenu
+            Layout: =Layout.Vertical
+            TemplateSize: =182
+            Width: =201
+            X: =39
+            Y: =49
+            ZIndex: =5
+
+            LblMenu_1 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =25
+                OnSelect: =Select(Parent)
+                PaddingLeft: =20
+                Size: =13
+                Text: =ThisItem.MenuLabel
+                Width: =Parent.TemplateWidth
+                ZIndex: =2
+
+            BtnClick_1 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =Transparent
+                FontWeight: =FontWeight.Semibold
+                Height: =LblMenu_1.Height+LblMenu_1.Y
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =Transparent
+                OnSelect: =Navigate(ThisItem.MenuScreen,ScreenTransition.Fade)
+                PressedFill: =Transparent
+                Size: =15
+                Text: =""
+                Width: =190
+                X: =1
+                ZIndex: =3
+
+            RecShape_1 As rectangle:
+                BorderColor: =RGBA(0, 18, 107, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =LblMenu_1.Height+LblMenu_1.Y
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.MenuScreen = App.ActiveScreen
+                Width: =4
+                X: =5
+                ZIndex: =4
+

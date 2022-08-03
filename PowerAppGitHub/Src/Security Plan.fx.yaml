@@ -1,0 +1,11 @@
+"'Security Plan' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Header_18 As Header:
+
+    LeftNav_18 As LeftNav:
+        MenuItems: =colMenu
+        Width: =LeftNav_18.MenuWidth
+        Y: =Header_18.Height
+        ZIndex: =2
+

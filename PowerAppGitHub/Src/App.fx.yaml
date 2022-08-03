@@ -1,3 +1,117 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(
+            colMenu,
+            Table(
+            {
+                MenuLabel: "Home", 
+                MenuIcon: Icon.Home, 
+                MenuScreen: Home,
+                MenuID: 1,
+                SubMenu: Table(
+                {
+                MenuLabel: "Overview",  
+                MenuScreen: Overview,
+                MenuID: 1
+                },
+                {
+                MenuLabel: "Assumptions, Constraints and Dependencies", 
+                MenuScreen: 'Assumptions, Constraints and Dependencies',
+                MenuID: 2
+                },
+                {
+                MenuLabel: "Resource", 
+                MenuScreen: Resource,
+                MenuID: 4
+                },
+                {
+                MenuLabel: "Master Schedule", 
+                MenuScreen: 'Master Schedule',
+                MenuID: 5
+                },
+                {
+                MenuLabel: "Delivery List", 
+                MenuScreen: 'Delivery List',
+                MenuID: 6
+                },
+                {
+                MenuLabel: "Development Environment", 
+                MenuScreen: 'Development Environment',
+                MenuID: 7
+                },
+                {
+                MenuLabel: "Size and Scope", 
+                MenuScreen: 'Size and Scope',
+                MenuID: 8
+                },
+                {
+                MenuLabel: "Cost Estimation", 
+                MenuScreen: 'Cost Estimation',
+                MenuID: 9
+                },
+                {
+                MenuLabel: "Work Calculation Details", 
+                MenuScreen: 'Work Calculation Details',
+                MenuID: 10
+                },
+                {
+                MenuLabel: "Other Cost", 
+                MenuScreen: 'Other Cost',
+                MenuID: 11
+                },
+                {
+                MenuLabel: "Test Plan (Overview)", 
+                MenuScreen: 'Test Plan (Overview)',
+                MenuID: 12
+                },
+                {
+                MenuLabel: "Test Plan (Indicators)", 
+                MenuScreen: 'Test Plan (Indicators)',
+                MenuID: 13
+                },
+                {
+                MenuLabel: "Communication Plan", 
+                MenuScreen: 'Communication Plan',
+                MenuID: 14
+                },
+                {
+                MenuLabel: "Work Order Management", 
+                MenuScreen: 'Work Order Management',
+                MenuID: 15
+                },
+                {
+                MenuLabel: "Tailoring Process", 
+                MenuScreen: 'Tailoring Process',
+                MenuID: 16
+                },
+                {
+                MenuLabel: "Tailoring Process (Agile)", 
+                MenuScreen: 'Tailoring Process (Agile)',
+                MenuID: 17
+                },
+                {
+                MenuLabel: "Security Plan", 
+                MenuScreen: 'Security Plan',
+                MenuID: 19
+                },
+                {
+                MenuLabel: "Risk Management", 
+                MenuScreen: 'Risk Management',
+                MenuID: 20
+                },
+                {
+                MenuLabel: "Configuration Management", 
+                MenuScreen: 'Configuration Management',
+                MenuID: 20
+                }
+        
+        
+                )
+            }
+        )
+        )
+            
+            
+            
 
