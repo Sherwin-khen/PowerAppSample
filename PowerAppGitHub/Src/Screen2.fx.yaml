@@ -1,9 +1,10 @@
 "Screen2 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     RectQuickActionBar2 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =RGBA(100, 118, 132, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
