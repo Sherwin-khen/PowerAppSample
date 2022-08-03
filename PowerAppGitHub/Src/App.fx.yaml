@@ -11,99 +11,64 @@ App As appinfo:
                 MenuID: 1,
                 SubMenu: Table(
                 {
-                MenuLabel: "Overview",  
+                MenuLabel: "Overview and Scope",  
                 MenuScreen: Overview,
-                MenuID: 1
+                MenuID: 2
                 },
                 {
                 MenuLabel: "Assumptions, Constraints and Dependencies", 
                 MenuScreen: 'Assumptions, Constraints and Dependencies',
-                MenuID: 2
+                MenuID: 3
                 },
                 {
-                MenuLabel: "Resource", 
+                MenuLabel: "Resources", 
                 MenuScreen: Resource,
                 MenuID: 4
                 },
                 {
-                MenuLabel: "Master Schedule", 
+                MenuLabel: "Deliverables and Schedule", 
                 MenuScreen: 'Master Schedule',
                 MenuID: 5
                 },
                 {
-                MenuLabel: "Delivery List", 
-                MenuScreen: 'Delivery List',
+                MenuLabel: "Development Environment", 
+                MenuScreen: 'Development Environment',
                 MenuID: 6
                 },
                 {
-                MenuLabel: "Development Environment", 
-                MenuScreen: 'Development Environment',
-                MenuID: 7
-                },
-                {
-                MenuLabel: "Size and Scope", 
-                MenuScreen: 'Size and Scope',
-                MenuID: 8
-                },
-                {
-                MenuLabel: "Cost Estimation", 
+                MenuLabel: "Costing", 
                 MenuScreen: 'Cost Estimation',
-                MenuID: 9
+                MenuID: 7
                 },
                 {
                 MenuLabel: "Work Calculation Details", 
                 MenuScreen: 'Work Calculation Details',
-                MenuID: 10
+                MenuID: 8
                 },
                 {
-                MenuLabel: "Other Cost", 
-                MenuScreen: 'Other Cost',
-                MenuID: 11
-                },
-                {
-                MenuLabel: "Test Plan (Overview)", 
+                MenuLabel: "Test Planning", 
                 MenuScreen: 'Test Plan (Overview)',
-                MenuID: 12
+                MenuID: 9
                 },
                 {
-                MenuLabel: "Test Plan (Indicators)", 
-                MenuScreen: 'Test Plan (Indicators)',
-                MenuID: 13
-                },
-                {
-                MenuLabel: "Communication Plan", 
+                MenuLabel: "Security and Communication Plan", 
                 MenuScreen: 'Communication Plan',
-                MenuID: 14
+                MenuID: 10
                 },
                 {
                 MenuLabel: "Work Order Management", 
                 MenuScreen: 'Work Order Management',
-                MenuID: 15
+                MenuID: 11
                 },
                 {
                 MenuLabel: "Tailoring Process", 
                 MenuScreen: 'Tailoring Process',
-                MenuID: 16
-                },
-                {
-                MenuLabel: "Tailoring Process (Agile)", 
-                MenuScreen: 'Tailoring Process (Agile)',
-                MenuID: 17
-                },
-                {
-                MenuLabel: "Security Plan", 
-                MenuScreen: 'Security Plan',
-                MenuID: 19
-                },
-                {
-                MenuLabel: "Risk Management", 
-                MenuScreen: 'Risk Management',
-                MenuID: 20
+                MenuID: 12
                 },
                 {
                 MenuLabel: "Configuration Management", 
                 MenuScreen: 'Configuration Management',
-                MenuID: 20
+                MenuID: 13
                 }
         
         

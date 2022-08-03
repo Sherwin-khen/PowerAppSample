@@ -87,7 +87,7 @@
     "Id": "53b4fd13-b7a1-4ab3-8dbf-5703a21403ab",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "PIP_2.msapp",
+    "Name": "PIP_2",
     "OriginatingVersion": "1.324"
   },
   "PublishInfo": {
@@ -106,11 +106,11 @@
     "Overview",
     "Assumptions, Constraints and Dependencies",
     "Resource",
-    "Master Schedule",
     "Delivery List",
     "Development Environment",
-    "Size and Scope",
     "Cost Estimation",
+    "Size and Scope",
+    "Master Schedule",
     "Work Calculation Details",
     "Other Cost",
     "Test Plan (Overview)",
