@@ -2215,7 +2215,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ExpandMenu",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "ExpandMenus",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -2257,7 +2264,7 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "ExpandMenu",
+          "PropertyName": "ExpandMenus",
           "RuleProviderType": "System"
         },
         {

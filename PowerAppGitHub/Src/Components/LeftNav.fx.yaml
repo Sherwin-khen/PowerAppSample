@@ -1,5 +1,5 @@
 LeftNav As CanvasComponent:
-    ExpandMenu: =true
+    ExpandMenus: =false
     Fill: =RGBA(245, 70, 70, 100)
     Height: =Max(App.Height, App.MinScreenHeight)
     MenuItems: |-
