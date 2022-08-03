@@ -75,6 +75,7 @@ LeftNav_1 As CanvasComponent:
             }
         )
     MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/25,250)
+    OnReset: =
     Width: =LeftNav_1.MenuWidth
     X: =0
     Y: =0
