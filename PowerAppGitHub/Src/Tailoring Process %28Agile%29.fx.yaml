@@ -1,5 +1,6 @@
 "'Tailoring Process (Agile)' As screen":
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     Header_17 As Header:
 

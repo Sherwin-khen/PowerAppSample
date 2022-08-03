@@ -1,5 +1,6 @@
 Overview As screen:
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
     LeftNav_2 As LeftNav:
         MenuItems: =colMenu
@@ -11,6 +12,9 @@ Overview As screen:
         ZIndex: =7
 
     Label3 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Size: =20
