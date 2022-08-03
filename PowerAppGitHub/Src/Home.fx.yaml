@@ -40,6 +40,6 @@ Home As screen:
     LeftNav_1 As LeftNav:
         MenuItems: =colMenu
         Width: =LeftNav_1.MenuWidth
-        Y: =Header_1.Height
+        Y: =46
         ZIndex: =3
 
