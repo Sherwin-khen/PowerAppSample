@@ -1,11 +1,3 @@
 "'Work Order Management' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
-    Header_15 As Header:
-
-    LeftNav_15 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_15.MenuWidth
-        Y: =Header_15.Height
-        ZIndex: =2
-

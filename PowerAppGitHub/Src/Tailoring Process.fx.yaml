@@ -1,11 +1,3 @@
 "'Tailoring Process' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
-    Header_16 As Header:
-
-    LeftNav_16 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_16.MenuWidth
-        Y: =Header_16.Height
-        ZIndex: =2
-

@@ -1,11 +1,3 @@
 "'Risk Management' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
-    Header_19 As Header:
-
-    LeftNav_19 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_19.MenuWidth
-        Y: =Header_19.Height
-        ZIndex: =2
-

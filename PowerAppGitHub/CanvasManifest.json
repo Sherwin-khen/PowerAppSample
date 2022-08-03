@@ -87,11 +87,11 @@
     "Id": "3767386c-522b-4ab5-a461-d5848749345d",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "PIP.msapp",
+    "Name": "PIP_2",
     "OriginatingVersion": "1.324"
   },
   "PublishInfo": {
-    "AppName": "PIP",
+    "AppName": "PIP_2",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

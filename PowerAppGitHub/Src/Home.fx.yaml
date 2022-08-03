@@ -33,12 +33,3 @@ Home As screen:
             Y: =282
             ZIndex: =2
 
-    Header_1 As Header:
-        ZIndex: =2
-
-    LeftNav_1 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_1.MenuWidth
-        Y: =Header_1.Height
-        ZIndex: =3
-

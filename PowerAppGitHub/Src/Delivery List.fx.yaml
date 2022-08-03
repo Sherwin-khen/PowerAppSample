@@ -21,12 +21,3 @@
             X: =196
             ZIndex: =1
 
-    Header_6 As Header:
-        ZIndex: =2
-
-    LeftNav_6 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_6.MenuWidth
-        Y: =46
-        ZIndex: =3
-

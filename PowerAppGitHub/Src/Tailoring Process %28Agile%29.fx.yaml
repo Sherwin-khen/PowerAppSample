@@ -1,11 +1,3 @@
 "'Tailoring Process (Agile)' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
-    Header_17 As Header:
-
-    LeftNav_17 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_17.MenuWidth
-        Y: =Header_17.Height
-        ZIndex: =2
-

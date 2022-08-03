@@ -21,15 +21,6 @@ Overview As screen:
             Y: =0
             ZIndex: =1
 
-    LeftNav_2 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_2.MenuWidth
-        Y: =45.17647058823525
-        ZIndex: =6
-
-    Header_2 As Header:
-        ZIndex: =7
-
     Label3 As label:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold

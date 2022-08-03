@@ -21,15 +21,6 @@
             X: =196
             ZIndex: =1
 
-    Header_5 As Header:
-        ZIndex: =2
-
-    LeftNav_5 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_5.MenuWidth
-        Y: =Header_5.Height
-        ZIndex: =3
-
     ResRoleAddModal As group:
         Height: =5
         Width: =5

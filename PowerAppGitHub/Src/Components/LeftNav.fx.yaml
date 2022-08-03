@@ -1,6 +1,6 @@
 LeftNav As CanvasComponent:
     Fill: =RGBA(245, 70, 70, 100)
-    Height: =Max(App.Height, App.MinScreenHeight)-45.17647058823529
+    Height: =Max(App.Height, App.MinScreenHeight)
     MenuItems: |-
         =Table(
             {
@@ -10,7 +10,7 @@ LeftNav As CanvasComponent:
                 MenuID: 1,
                 SubMenu: Table(
                 {
-                MenuLabel: "Overview",  
+                MenuLabel: "Overview and Scope",  
                 MenuScreen: App.ActiveScreen,
                 MenuID: 2
                 },
@@ -20,89 +20,54 @@ LeftNav As CanvasComponent:
                 MenuID: 3
                 },
                 {
-                MenuLabel: "Resource", 
+                MenuLabel: "Resources", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 4
                 },
                 {
-                MenuLabel: "Master Schedule", 
+                MenuLabel: "Deliverables and Schedule", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 5
                 },
                 {
-                MenuLabel: "Delivery List", 
+                MenuLabel: "Development Environment", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 6
                 },
                 {
-                MenuLabel: "Development Environment", 
+                MenuLabel: "Costing", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 7
                 },
                 {
-                MenuLabel: "Size and Scope", 
+                MenuLabel: " Work Calculation Details", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 8
                 },
                 {
-                MenuLabel: "Cost Estimation", 
+                MenuLabel: "Test Planning", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 9
                 },
                 {
-                MenuLabel: " Work Calculation Details", 
+                MenuLabel: "Security and Communication Plan", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 10
                 },
                 {
-                MenuLabel: "Other Cost", 
+                MenuLabel: "Work Order Management", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 11
                 },
                 {
-                MenuLabel: "Test Plan (Overview)", 
+                MenuLabel: "Tailoring Process", 
                 MenuScreen: App.ActiveScreen,
                 MenuID: 12
                 },
                 {
-                MenuLabel: "Test Plan (Indicators)", 
-                MenuScreen: App.ActiveScreen,
-                MenuID: 13
-                },
-                {
-                MenuLabel: "Communication Plan", 
-                MenuScreen: App.ActiveScreen,
-                MenuID: 14
-                },
-                {
-                MenuLabel: "Work Order Management", 
-                MenuScreen: App.ActiveScreen,
-                MenuID: 15
-                },
-                {
-                MenuLabel: "Tailoring Process", 
-                MenuScreen: App.ActiveScreen,
-                MenuID: 16
-                },
-                {
-                MenuLabel: "Tailoring Process (Agile)", 
-                MenuScreen: App.ActiveScreen,
-                MenuID: 17
-                },
-                {
-                MenuLabel: "Security Plan", 
-                MenuScreen: App.ActiveScreen,
-                MenuID: 18
-                },
-                {
-                MenuLabel: "Risk Management", 
-                MenuScreen: App.ActiveScreen,
-                MenuID: 19
-                },
-                {
                 MenuLabel: "Configuration Management", 
                 MenuScreen: App.ActiveScreen,
-                MenuID: 20
+                MenuID: 13
                 }
         
                 )

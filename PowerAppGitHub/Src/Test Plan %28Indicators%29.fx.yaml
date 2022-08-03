@@ -1,11 +1,3 @@
 "'Test Plan (Indicators)' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
-    Header_13 As Header:
-
-    LeftNav_13 As LeftNav:
-        MenuItems: =colMenu
-        Width: =LeftNav_13.MenuWidth
-        Y: =Header_13.Height
-        ZIndex: =2
-

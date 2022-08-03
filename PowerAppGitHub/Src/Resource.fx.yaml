@@ -42,12 +42,6 @@ Resource As screen:
         Y: =6
         ZIndex: =3
 
-    LeftNav_4 As LeftNav:
-        Height: =768
-        MenuItems: =colMenu
-        Width: =54
-        ZIndex: =8
-
     ResourcesCanvas As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =702
