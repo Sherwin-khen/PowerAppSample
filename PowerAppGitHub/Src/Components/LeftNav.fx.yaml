@@ -1,5 +1,5 @@
 LeftNav As CanvasComponent:
-    ExpandMenus: =false
+    ExpandMenus: =true
     Fill: =RGBA(245, 70, 70, 100)
     Height: =Max(App.Height, App.MinScreenHeight)
     MenuItems: |-
@@ -187,7 +187,7 @@ LeftNav As CanvasComponent:
                 Height: =25
                 OnSelect: =Select(Parent)
                 PaddingLeft: =20
-                Size: =12
+                Size: =13
                 Text: =ThisItem.MenuLabel
                 Width: =Parent.TemplateWidth
                 ZIndex: =2
@@ -198,7 +198,7 @@ LeftNav As CanvasComponent:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =Transparent
                 FontWeight: =FontWeight.Semibold
-                Height: =LblMenu_1.Height+LblMenu_1.Y
+                Height: =25
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =Transparent
                 OnSelect: =Navigate(ThisItem.MenuScreen,ScreenTransition.Fade)
