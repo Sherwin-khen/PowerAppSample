@@ -22,12 +22,12 @@ App As appinfo:
                 },
                 {
                 MenuLabel: "Resources", 
-                MenuScreen: Resource,
+                MenuScreen: Resources,
                 MenuID: 4
                 },
                 {
                 MenuLabel: "Deliverables and Schedule", 
-                MenuScreen: 'Master Schedule',
+                MenuScreen: 'Delivery List',
                 MenuID: 5
                 },
                 {

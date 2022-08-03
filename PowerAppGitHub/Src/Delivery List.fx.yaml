@@ -22,3 +22,8 @@
             X: =196
             ZIndex: =1
 
+    LeftNav_5 As LeftNav_1:
+        MenuItems: =colMenu
+        Width: =LeftNav_5.MenuWidth
+        ZIndex: =2
+

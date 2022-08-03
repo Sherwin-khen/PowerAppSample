@@ -58,3 +58,8 @@
             Y: =36
             ZIndex: =1
 
+    LeftNav_3 As LeftNav_1:
+        MenuItems: =colMenu
+        Width: =LeftNav_3.MenuWidth
+        ZIndex: =5
+

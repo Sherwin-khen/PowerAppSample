@@ -1639,3 +1639,8 @@ Overview As screen:
                     Y: =DataCardKey73.Y + DataCardKey73.Height + 5
                     ZIndex: =2
 
+    LeftNav_2 As LeftNav_1:
+        MenuItems: =colMenu
+        Width: =LeftNav_2.MenuWidth
+        ZIndex: =11
+
