@@ -57,7 +57,7 @@ Resources As screen:
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(238, 238, 238, 1)
-            Height: =706
+            Height: =684
             Width: =1312
             X: =0
             Y: =0
@@ -326,6 +326,22 @@ Resources As screen:
                     X: =1074
                     ZIndex: =11
 
+            ResRoleAddNewRoleBtn As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(100, 118, 132, 1)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                OnSelect: |-
+                    =NewForm(ResRoleAddRoleForm);UpdateContext({_showRequestModal:true})
+                Size: =15
+                Text: ="Button"
+                X: =56
+                Y: =91
+                ZIndex: =6
+
     LeftNav_4 As LeftNav_1:
         MenuItems: =colMenu
         Width: =LeftNav_4.MenuWidth
@@ -338,32 +354,35 @@ Resources As screen:
         Y: =88
         ZIndex: =13
 
-        Rectangle5_1 As rectangle:
+        ResRoleAddRoleModalGryBG As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(60, 60, 60, 0.5)
             Height: =768
+            Visible: =_showRequestModal
             Width: =1366
             ZIndex: =5
 
-        Rectangle6_1 As rectangle:
+        ResRoleAddRoleFormWhiteBG As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =637
+            Visible: =_showRequestModal
             Width: =563
             X: =401
             Y: =65
             ZIndex: =6
 
-        Rectangle7_1 As rectangle:
+        ResRoleAddRoleTitleRedBG As rectangle:
             BorderColor: =RGBA(254, 1, 1, 1)
             Fill: =RGBA(254, 1, 1, 1)
             Height: =44
+            Visible: =_showRequestModal
             Width: =563
             X: =401
             Y: =65
             ZIndex: =7
 
-        Label7_1 As label:
+        ResRoleAddRoleTitle As label:
             Align: =Align.Center
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
@@ -372,21 +391,23 @@ Resources As screen:
             FontWeight: =FontWeight.Bold
             Size: =16
             Text: ="Add Role"
+            Visible: =_showRequestModal
             X: =608
             Y: =65
             ZIndex: =8
 
-        Form2_1 As form:
+        ResRoleAddRoleForm As form:
             BorderColor: =RGBA(131, 24, 75, 1)
             DataSource: |-
                 ='PIP: Resource Role'
             Height: =513
+            Visible: =_showRequestModal
             Width: =563
             X: =401
             Y: =109
             ZIndex: =9
 
-            Title_DataCard1_1 As typedDataCard.textualEditCard:
+            ResRoleAddRoleID As typedDataCard.textualEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Title"
@@ -479,7 +500,7 @@ Resources As screen:
                     Y: =15
                     ZIndex: =4
 
-            Role_DataCard1_1 As typedDataCard.comboBoxEditCard:
+            ResRoleAddRole As typedDataCard.comboBoxEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Role"
@@ -562,7 +583,7 @@ Resources As screen:
                     Y: =DataCardValue2_1.Y + DataCardValue2_1.Height
                     ZIndex: =3
 
-            Role_Name_DataCard1_1 As typedDataCard.textualEditCard:
+            ResRoleAddRoleName As typedDataCard.textualEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Role_Name"
@@ -641,7 +662,7 @@ Resources As screen:
                     Y: =DataCardValue3_1.Y + DataCardValue3_1.Height
                     ZIndex: =3
 
-            Start_Date_DataCard1_1 As typedDataCard.dateEditCard:
+            ResRoleAddRoleSD As typedDataCard.dateEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Start_Date"
@@ -714,7 +735,7 @@ Resources As screen:
                     Y: =DataCardValue4_1.Y + DataCardValue4_1.Height
                     ZIndex: =3
 
-            End_Date_DataCard1_1 As typedDataCard.dateEditCard:
+            ResRoleAddRoleED As typedDataCard.dateEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="End_Date"
@@ -787,7 +808,7 @@ Resources As screen:
                     Y: =DataCardValue7_1.Y + DataCardValue7_1.Height
                     ZIndex: =3
 
-            Key_Role_DataCard1_1 As typedDataCard.textualEditCard:
+            ResRoleAddRoleKR As typedDataCard.textualEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Key_Role"
@@ -868,7 +889,7 @@ Resources As screen:
                     Y: =DataCardValue8_1.Y + DataCardValue8_1.Height
                     ZIndex: =3
 
-        Button3_2 As button:
+        ResRoleAddRoleClearBtn As button:
             BorderThickness: =0
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -878,18 +899,20 @@ Resources As screen:
             Height: =44
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: =ResetForm(ResRoleAddRoleForm);NewForm(ResRoleAddRoleForm)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Size: =15
             Text: ="Clear"
+            Visible: =_showRequestModal
             Width: =128
             X: =659
             Y: =622
             ZIndex: =10
 
-        Button3_3 As button:
+        ResRoleAddRoleSaveBtn As button:
             BorderThickness: =0
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -899,24 +922,29 @@ Resources As screen:
             Height: =43
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
+            OnSelect: =SubmitForm(ResRoleAddRoleForm)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Size: =15
             Text: ="Save"
+            Visible: =_showRequestModal
             Width: =128
             X: =793
             Y: =623
             ZIndex: =11
 
-        ResRoleClose_1 As icon.Cancel:
+        ResRoleAddRoleClose As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =21
             Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({_showRequestModal:false})
+            Visible: =_showRequestModal
             Width: =23
             X: =921
             Y: =74
