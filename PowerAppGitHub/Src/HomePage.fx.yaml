@@ -24,7 +24,19 @@ HomePage As screen:
         Width: =237
         X: =902
         Y: =110
-        ZIndex: =4
+        ZIndex: =1
+
+    searchicon1 As icon.Search:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(255, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =26
+        Icon: =Icon.Search
+        Width: =30
+        X: =904
+        Y: =117
+        ZIndex: =2
 
     ddsearchcat As dropdown:
         AllowEmptySelection: =true
@@ -48,18 +60,18 @@ HomePage As screen:
         Width: =171
         X: =1145
         Y: =110
-        ZIndex: =5
+        ZIndex: =3
 
-    Rectangle1 As rectangle:
+    headerline As rectangle:
         BorderColor: =RGBA(131, 24, 75, 1)
         Fill: =RGBA(211, 66, 9, 1)
         Height: =4
         Width: =1365
         X: =1
         Y: =82
-        ZIndex: =6
+        ZIndex: =4
 
-    Label4 As label:
+    user_lbl As label:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -68,9 +80,9 @@ HomePage As screen:
         Width: =211
         X: =1145
         Y: =26
-        ZIndex: =7
+        ZIndex: =5
 
-    Image1 As image:
+    companylogo_img As image:
         BorderColor: =RGBA(131, 24, 75, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -78,9 +90,9 @@ HomePage As screen:
         Image: =fujitsuLogo
         X: =51
         Y: =31
-        ZIndex: =8
+        ZIndex: =6
 
-    Label5 As label:
+    listtitle_lbl As label:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -91,9 +103,9 @@ HomePage As screen:
         Width: =287
         X: =40
         Y: =150
-        ZIndex: =9
+        ZIndex: =7
 
-    Image3 As image:
+    user_img As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -108,13 +120,19 @@ HomePage As screen:
         Width: =45
         X: =1096
         Y: =21
-        ZIndex: =10
+        ZIndex: =8
 
-    Gallery2 As gallery.galleryVertical:
+    approvedlist_galler1 As gallery.galleryVertical:
         BorderColor: =RGBA(131, 24, 75, 1)
         Height: =473
         Items: |-
-            = Filter('ORR: Project Info', StartsWith(Title,txtsearch.Text))
+            = If(ddsearchcat.SelectedText.Value = "ORR Head Code", 
+                Filter('ORR: Project Info', txtsearch.Text in 'ORR Head Code'),
+                    If(ddsearchcat.SelectedText.Value = "Project Name",
+                        Filter('ORR: Project Info', txtsearch.Text in 'Project Name'),
+                            If(ddsearchcat.SelectedText.Value = "Order Number",
+                                 Filter('ORR: Project Info', txtsearch.Text in 'Order Number'),'ORR: Project Info')))
+            
             
              
         Layout: =Layout.Vertical
@@ -123,9 +141,9 @@ HomePage As screen:
         Width: =1281
         X: =40
         Y: =245
-        ZIndex: =11
+        ZIndex: =9
 
-        Label13 As label:
+        orrheadcode_lbl As label:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -138,7 +156,7 @@ HomePage As screen:
             X: =12
             ZIndex: =1
 
-        Label13_1 As label:
+        projectname_lbl As label:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -151,7 +169,7 @@ HomePage As screen:
             X: =155
             ZIndex: =2
 
-        Label13_2 As label:
+        develpmentmondel_lbl As label:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -164,7 +182,7 @@ HomePage As screen:
             X: =300
             ZIndex: =3
 
-        Label15 As label:
+        developmentlanguage_lbl As label:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -177,7 +195,7 @@ HomePage As screen:
             X: =485
             ZIndex: =4
 
-        Label16 As label:
+        ordernumber_lbl As label:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -190,7 +208,7 @@ HomePage As screen:
             X: =694
             ZIndex: =5
 
-        Label17 As label:
+        pic1_lbl As label:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -203,7 +221,7 @@ HomePage As screen:
             X: =833
             ZIndex: =6
 
-        Label18 As label:
+        pic2_lbl As label:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -216,7 +234,7 @@ HomePage As screen:
             X: =980
             ZIndex: =7
 
-        Label19 As label:
+        action_lbl As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =34
@@ -227,7 +245,7 @@ HomePage As screen:
             X: =1126
             ZIndex: =8
 
-        Icon3 As icon.Edit:
+        editicon1 As icon.Edit:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -239,7 +257,7 @@ HomePage As screen:
             X: =1173
             ZIndex: =9
 
-        Icon4 As icon.AddDocument:
+        addicon1 As icon.AddDocument:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -254,7 +272,7 @@ HomePage As screen:
             Y: =4
             ZIndex: =10
 
-        Icon5 As icon.View:
+        viewicon1 As icon.View:
             BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -266,7 +284,7 @@ HomePage As screen:
             X: =1208
             ZIndex: =11
 
-    Label21 As label:
+    orrheadcode_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -277,9 +295,9 @@ HomePage As screen:
         Width: =143
         X: =59
         Y: =205
-        ZIndex: =12
+        ZIndex: =10
 
-    Label21_1 As label:
+    projectname_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -290,9 +308,9 @@ HomePage As screen:
         Width: =144
         X: =202
         Y: =205
-        ZIndex: =13
+        ZIndex: =11
 
-    Label21_2 As label:
+    developmenmodel_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -303,9 +321,9 @@ HomePage As screen:
         Width: =185
         X: =346
         Y: =205
-        ZIndex: =14
+        ZIndex: =12
 
-    Label21_3 As label:
+    developmentlanguage_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -316,9 +334,9 @@ HomePage As screen:
         Width: =211
         X: =531
         Y: =205
-        ZIndex: =15
+        ZIndex: =13
 
-    Label21_4 As label:
+    ordernumber_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -329,9 +347,9 @@ HomePage As screen:
         Width: =139
         X: =742
         Y: =205
-        ZIndex: =16
+        ZIndex: =14
 
-    Label21_5 As label:
+    pic1_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -342,9 +360,9 @@ HomePage As screen:
         Width: =143
         X: =881
         Y: =205
-        ZIndex: =17
+        ZIndex: =15
 
-    Label21_6 As label:
+    pic2_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -355,9 +373,9 @@ HomePage As screen:
         Width: =148
         X: =1024
         Y: =205
-        ZIndex: =18
+        ZIndex: =16
 
-    Label21_7 As label:
+    action_header As label:
         Align: =Align.Center
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -368,19 +386,7 @@ HomePage As screen:
         Width: =133
         X: =1172
         Y: =205
-        ZIndex: =19
-
-    Icon1 As icon.Search:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =26
-        Icon: =Icon.Search
-        Width: =30
-        X: =904
-        Y: =117
-        ZIndex: =27
+        ZIndex: =17
 
     PIP_Add_Modal As group:
         Height: =5
@@ -399,7 +405,7 @@ HomePage As screen:
             Width: =1365
             X: =1
             Y: =1
-            ZIndex: =20
+            ZIndex: =18
 
         Rectangle4 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -412,7 +418,7 @@ HomePage As screen:
             Width: =422
             X: =496
             Y: =15
-            ZIndex: =21
+            ZIndex: =19
 
         Label2_1 As label:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -428,7 +434,7 @@ HomePage As screen:
             Width: =422
             X: =496
             Y: =14
-            ZIndex: =22
+            ZIndex: =20
 
         Icon6 As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -445,14 +451,14 @@ HomePage As screen:
             Width: =34
             X: =881
             Y: =21
-            ZIndex: =23
+            ZIndex: =21
 
         Form1 As form:
             BorderColor: =RGBA(131, 24, 75, 1)
             DataSource: |-
                 ='ORR: Project Info'
             Height: =614
-            Item: =Gallery2.Selected
+            Item: =approvedlist_galler1.Selected
             NumberOfColumns: =1
             Visible: |+
                 =_showPIP_add_modal
@@ -460,7 +466,7 @@ HomePage As screen:
             Width: =422
             X: =496
             Y: =68
-            ZIndex: =24
+            ZIndex: =22
 
             "'Order Number_DataCard1' As typedDataCard.numberEditCard":
                 BorderColor: =RGBA(131, 24, 75, 1)
@@ -1016,7 +1022,7 @@ HomePage As screen:
                 
             X: =721
             Y: =693
-            ZIndex: =25
+            ZIndex: =23
 
         Button2_1 As button:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -1034,5 +1040,5 @@ HomePage As screen:
                 
             X: =548
             Y: =693
-            ZIndex: =26
+            ZIndex: =24
 
