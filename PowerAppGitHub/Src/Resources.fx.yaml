@@ -922,7 +922,8 @@ Resources As screen:
             Height: =43
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
-            OnSelect: =SubmitForm(ResRoleAddRoleForm)
+            OnSelect: |-
+                =SubmitForm(ResRoleAddRoleForm);UpdateContext({_showRequestModal:false})
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
