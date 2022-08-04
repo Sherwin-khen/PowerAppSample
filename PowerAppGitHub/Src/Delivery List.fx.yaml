@@ -27,3 +27,13 @@
             Y: =0
             ZIndex: =1
 
+            Gallery1 As gallery.galleryVertical:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderThickness: =9
+                Height: =189
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                TemplateSize: =135
+                Width: =Parent.Width
+                ZIndex: =1
+
