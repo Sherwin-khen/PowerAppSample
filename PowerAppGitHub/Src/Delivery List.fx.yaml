@@ -115,6 +115,18 @@
                     X: =822
                     ZIndex: =5
 
+                Icon2 As icon.Edit:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(32, 54, 71, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =30
+                    Icon: =Icon.Edit
+                    OnSelect: =Select(Parent)
+                    Width: =30
+                    X: =1049
+                    ZIndex: =6
+
     GalDelHeader As gallery.galleryVertical:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(230, 230, 230, 1)
@@ -188,6 +200,19 @@
             Width: =183
             X: =818
             ZIndex: =5
+
+        DelIconHeaderEdit As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Edit
+            OnSelect: =Select(Parent)
+            Width: =30
+            X: =1049
+            Y: =18
+            ZIndex: =6
 
     LeftNav_5 As LeftNav_1:
         MenuItems: =colMenu
