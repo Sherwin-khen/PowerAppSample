@@ -7,8 +7,8 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(100, 118, 132, 1)
         Height: =88
-        Width: =Parent.Width - LeftNav_5.MenuWidth
-        X: =LeftNav_5.MenuWidth
+        Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
+        X: =LeftNav_DeliveryList.MenuWidth
         ZIndex: =1
 
     LblAppName5 As label:
@@ -18,15 +18,15 @@
         Height: =88
         Size: =18
         Text: ="[Title]"
-        Width: =Parent.Width - LeftNav_5.MenuWidth
-        X: =LeftNav_5.MenuWidth
+        Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
+        X: =LeftNav_DeliveryList.MenuWidth
         ZIndex: =2
 
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =680
-        Width: =Parent.Width - LeftNav_5.MenuWidth
-        X: =LeftNav_5.MenuWidth
+        Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
+        X: =LeftNav_DeliveryList.MenuWidth
         Y: =88
         ZIndex: =3
 
@@ -134,8 +134,8 @@
         Items: =delListHeaderA
         Layout: =Layout.Vertical
         TemplateSize: =67
-        Width: =Parent.Width - LeftNav_5.MenuWidth
-        X: =LeftNav_5.MenuWidth
+        Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
+        X: =LeftNav_DeliveryList.MenuWidth
         Y: =88
         ZIndex: =4
 
@@ -214,8 +214,8 @@
             Y: =18
             ZIndex: =6
 
-    LeftNav_5 As LeftNav_1:
+    LeftNav_DeliveryList As LeftNav_1:
         MenuItems: =colMenu
-        Width: =LeftNav_5.MenuWidth
+        Width: =LeftNav_DeliveryList.MenuWidth
         ZIndex: =5
 
