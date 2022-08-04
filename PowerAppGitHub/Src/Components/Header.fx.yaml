@@ -6,20 +6,6 @@ Header As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    ResProjectName_1 As label:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =20
-        Text: ="Project Name "
-        Width: =231
-        X: =174
-        Y: =4
-        ZIndex: =1
-
     ResourcesPage_1 As label:
         BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -33,4 +19,18 @@ Header As CanvasComponent:
         X: =16
         Y: =4
         ZIndex: =2
+
+    ResourcesPage_2 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =20
+        Text: ="Project Name"
+        Width: =211
+        X: =174
+        Y: =4
+        ZIndex: =3
 

@@ -14,6 +14,9 @@
           "ORR: Project Info": {
             "tableName": "0173795b-1d3b-4554-a345-173204011c8e"
           },
+          "ORR: Project Info_1": {
+            "tableName": "0173795b-1d3b-4554-a345-173204011c8e"
+          },
           "PIP: Deliverable_Received": {
             "tableName": "5c4d2d0f-4e73-450d-9fa4-7b1174df6bd8"
           },
@@ -26,7 +29,8 @@
     "dataSources": [
       "ORR: Project Info",
       "PIP: Resource Role",
-      "PIP: Deliverable_Received"
+      "PIP: Deliverable_Received",
+      "ORR: Project Info_1"
     ],
     "dependencies": {},
     "dependents": [],

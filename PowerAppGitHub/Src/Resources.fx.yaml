@@ -21,7 +21,7 @@ Resources As screen:
         Width: =1312
         X: =54
         Y: =59
-        ZIndex: =3
+        ZIndex: =1
 
         ResScrDtCard As dataCard:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -335,10 +335,14 @@ Resources As screen:
                 Y: =96
                 ZIndex: =7
 
+    Header_1 As Header:
+        X: =54
+        ZIndex: =2
+
     LeftNav_4 As LeftNav_1:
         MenuItems: =colMenu
         Width: =LeftNav_4.MenuWidth
-        ZIndex: =11
+        ZIndex: =10
 
     ResRoleAddModal_1 As group:
         Height: =5
@@ -353,7 +357,7 @@ Resources As screen:
             Height: =768
             Visible: =_showRequestModal2
             Width: =1366
-            ZIndex: =14
+            ZIndex: =12
 
         ResRoleAddRoleFormWhiteBG As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -363,7 +367,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =65
-            ZIndex: =15
+            ZIndex: =13
 
         ResRoleAddRoleTitleRedBG As rectangle:
             BorderColor: =RGBA(254, 1, 1, 1)
@@ -373,7 +377,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =65
-            ZIndex: =16
+            ZIndex: =14
 
         ResRoleAddRoleTitle As label:
             Align: =Align.Center
@@ -387,7 +391,7 @@ Resources As screen:
             Visible: =_showRequestModal2
             X: =608
             Y: =65
-            ZIndex: =17
+            ZIndex: =15
 
         ResRoleAddRoleForm As form:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -398,7 +402,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =109
-            ZIndex: =18
+            ZIndex: =16
 
             ResRoleAddRoleID As typedDataCard.textualEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
@@ -903,7 +907,7 @@ Resources As screen:
             Width: =128
             X: =659
             Y: =622
-            ZIndex: =19
+            ZIndex: =17
 
         ResRoleAddRoleSaveBtn As button:
             BorderThickness: =0
@@ -927,7 +931,7 @@ Resources As screen:
             Width: =128
             X: =793
             Y: =623
-            ZIndex: =20
+            ZIndex: =18
 
         ResRoleAddRoleClose As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -942,7 +946,7 @@ Resources As screen:
             Width: =23
             X: =921
             Y: =74
-            ZIndex: =21
+            ZIndex: =19
 
     ResRoleUpdateModal As group:
         Height: =5
@@ -957,7 +961,7 @@ Resources As screen:
             Height: =768
             Visible: =_showRequestModal
             Width: =1366
-            ZIndex: =5
+            ZIndex: =3
 
         ResRoleUpdateRoleFormWhiteBG As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -967,7 +971,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =65
-            ZIndex: =6
+            ZIndex: =4
 
         ResRoleUpdateRoleTitleRedBG As rectangle:
             BorderColor: =RGBA(254, 1, 1, 1)
@@ -977,7 +981,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =65
-            ZIndex: =7
+            ZIndex: =5
 
         ResRoleUpdateRoleTitle As label:
             Align: =Align.Center
@@ -991,7 +995,7 @@ Resources As screen:
             Visible: =_showRequestModal
             X: =608
             Y: =65
-            ZIndex: =8
+            ZIndex: =6
 
         ResRoleUpdateRoleForm As form:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1003,7 +1007,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =109
-            ZIndex: =9
+            ZIndex: =7
 
             ResRoleUpdateRoleID As typedDataCard.textualEditCard:
                 BorderColor: =RGBA(128, 128, 128, 1)
@@ -1508,7 +1512,7 @@ Resources As screen:
             Width: =128
             X: =659
             Y: =622
-            ZIndex: =10
+            ZIndex: =8
 
         ResRoleUpdateRoleSaveBtn As button:
             BorderThickness: =0
@@ -1532,7 +1536,7 @@ Resources As screen:
             Width: =128
             X: =793
             Y: =623
-            ZIndex: =12
+            ZIndex: =9
 
         ResRoleUpdateRoleClose As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1547,9 +1551,5 @@ Resources As screen:
             Width: =23
             X: =921
             Y: =74
-            ZIndex: =13
-
-    Header_1 As Header:
-        X: =54
-        ZIndex: =22
+            ZIndex: =11
 
