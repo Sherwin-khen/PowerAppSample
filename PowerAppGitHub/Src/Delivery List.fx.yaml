@@ -12,7 +12,7 @@
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width-LeftNav_5.Width
         X: =LeftNav_5.MenuWidth
-        Y: =RectQuickActionBar3.Y + RectQuickActionBar3.Height
+        Y: =
         ZIndex: =3
 
         DataCard1 As dataCard:
