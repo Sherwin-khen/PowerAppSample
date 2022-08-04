@@ -36,7 +36,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =680
+            Height: =691
             Width: =1116
             X: =0
             Y: =0
@@ -44,12 +44,13 @@
 
             GalDelList As gallery.galleryVertical:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Height: =598
+                Height: =Parent.Height
                 Items: |-
                     ='PIP: Deliverable_Received'
                 Layout: =Layout.Vertical
                 TemplateSize: =90
-                Width: =1116
+                Width: =Parent.Width
+                X: =
                 Y: =81
                 ZIndex: =1
 
