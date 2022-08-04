@@ -5,7 +5,7 @@
         MenuItems: =colMenu
         Width: =LeftNav_DeliveryList_Form.MenuWidth
 
-    Form3 As form:
+    DeliveryListAddEditForm As form:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: |-
             ='PIP: Deliverable_Received'
