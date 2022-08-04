@@ -1,8 +1,36 @@
 Header As CanvasComponent:
-    Fill: =RGBA(184, 0, 0, 1)
-    Height: =Max(App.Height, App.MinScreenHeight)/12
-    Width: =Max(App.Width, App.MinScreenWidth)-45
+    Fill: =RGBA(255, 255, 255, 1)
+    Height: =Max(App.Height, App.MinScreenHeight)/13
+    Width: =Max(App.Width, App.MinScreenWidth)-54
     X: =0
     Y: =0
     ZIndex: =1
+
+    ResProjectName_1 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =20
+        Text: ="Project Name "
+        Width: =231
+        X: =174
+        Y: =4
+        ZIndex: =1
+
+    ResourcesPage_1 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =20
+        Text: ="Resources |"
+        Width: =158
+        X: =16
+        Y: =4
+        ZIndex: =2
 
