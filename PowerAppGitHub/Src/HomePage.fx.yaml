@@ -403,7 +403,6 @@ HomePage As screen:
                 =_showPIP_add_modal
                 
             Width: =1365
-            X: =1
             Y: =1
             ZIndex: =18
 
