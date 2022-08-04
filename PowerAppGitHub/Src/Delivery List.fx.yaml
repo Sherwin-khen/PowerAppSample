@@ -66,6 +66,30 @@
                     Y: =6
                     ZIndex: =1
 
+                lblDelListDateReceived As label:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.'Date Received'
+                    X: =272
+                    Y: =6
+                    ZIndex: =2
+
+                lblDelListVersion As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    OnSelect: =Select(Parent)
+                    Size: =13
+                    Text: =ThisItem.'Version Received'
+                    Width: =100
+                    X: =496
+                    Y: =6
+                    ZIndex: =3
+
     GalDelHeader As gallery.galleryVertical:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(230, 230, 230, 1)
@@ -99,6 +123,18 @@
             X: =268
             Y: =12
             ZIndex: =2
+
+        Label5 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Version_Received
+            Width: =180
+            X: =464
+            Y: =12
+            ZIndex: =3
 
     LeftNav_5 As LeftNav_1:
         MenuItems: =colMenu
