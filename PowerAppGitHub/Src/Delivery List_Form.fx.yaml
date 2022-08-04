@@ -9,7 +9,7 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: |-
             ='PIP: Deliverable_Received'
-        Height: =Parent.Height
+        Height: =636
         NumberOfColumns: =1
         Width: =Parent.Width - LeftNav_DeliveryList_Form.MenuWidth
         X: =250
@@ -463,4 +463,35 @@
                 Wrap: =false
                 Y: =DataCardKey13.Y
                 ZIndex: =4
+
+    btnDelCancel As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Navigate('Delivery List') //false
+        Size: =15
+        Text: ="Cancel"
+        X: =1173
+        Y: =696
+        ZIndex: =3
+
+    btnDelSave As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        Size: =15
+        Text: ="Save"
+        X: =972
+        Y: =696
+        ZIndex: =4
 
