@@ -8,7 +8,7 @@
         ZIndex: =2
 
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
+        BorderThickness: =3
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width-LeftNav_5.Width
         X: =LeftNav_5.MenuWidth
