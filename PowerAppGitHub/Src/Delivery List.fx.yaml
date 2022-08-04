@@ -1,67 +1,83 @@
-"'Delivery List' As screen":
-    Fill: =RGBA(255,255,255,1)
-    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+"'Delivery List' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
-        =ClearCollect(deliveryListHeader, {Description: "Description", Date_Received: "Date Received", Version_Received: "Version Received", Delivery_Object: "Delivery Object", Remarks: "Remarks"});
+        =ClearCollect(delListHeaderA, {Description: "Description", Date_Received: "Date Received", Version_Received: "Version Received", Delivery_Object: "Delivery Object", Remarks: "Remarks"});
 
-    LeftNav_5 As LeftNav_1:
-        MenuItems: =colMenu
-        Width: =LeftNav_5.MenuWidth
-
-    Gallery1 As gallery.galleryVertical:
+    RectQuickActionBar5 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
-        BorderThickness: =1
-        Height: =175
-        Items: =deliveryListHeader
-        Layout: =Layout.Vertical
-        TemplateSize: =135
-        Width: =1311
-        X: =54
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =88
+        Width: =Parent.Width - LeftNav_5.MenuWidth
+        X: =LeftNav_5.MenuWidth
+        ZIndex: =1
+
+    LblAppName5 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =88
+        Size: =18
+        Text: ="[Title]"
+        Width: =Parent.Width - LeftNav_5.MenuWidth
+        X: =LeftNav_5.MenuWidth
         ZIndex: =2
 
-        txtDateReceived As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =42
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: =ThisItem.Date_Received
-            Width: =162
-            X: =40
-            Y: =40
+    Canvas2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width - LeftNav_5.MenuWidth
+        X: =250
+        Y: =RectQuickActionBar5.Y + RectQuickActionBar5.Height
+        ZIndex: =3
+
+        DataCard3 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =1116
+            X: =0
+            Y: =0
             ZIndex: =1
 
-        Label6 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: =ThisItem.Delivery_Object
-            X: =63
-            Y: =56
-            ZIndex: =2
+    Gallery6 As gallery.galleryVertical:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        Height: =79
+        Items: =delListHeaderA
+        Layout: =Layout.Vertical
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =Parent.Width - LeftNav_5.MenuWidth
+        X: =LeftNav_5.MenuWidth
+        Y: =88
+        ZIndex: =4
 
-        Label9 As label:
+        Label23 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             OnSelect: =Select(Parent)
             Size: =13
             Text: =ThisItem.Description
-            X: =438
-            Y: =56
-            ZIndex: =3
+            X: =18
+            Y: =12
+            ZIndex: =1
 
-        Label10 As label:
+        Label24 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             OnSelect: =Select(Parent)
             Size: =13
-            Text: =ThisItem.Remarks
-            X: =758
-            Y: =56
-            ZIndex: =4
+            Text: =ThisItem.Date_Received
+            X: =220
+            Y: =12
+            ZIndex: =2
+
+    LeftNav_5 As LeftNav_1:
+        MenuItems: =colMenu
+        Width: =LeftNav_5.MenuWidth
+        ZIndex: =5
 
