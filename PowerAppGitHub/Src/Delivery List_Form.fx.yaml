@@ -58,6 +58,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
+                Height: =100
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -381,7 +382,7 @@
             DisplayName: |-
                 =DataSourceInfo([@'PIP: Deliverable_Received'],DataSourceInfo.DisplayName,"Remarks")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =142
             MaxLength: |-
                 =DataSourceInfo([@'PIP: Deliverable_Received'], DataSourceInfo.MaxLength, "Remarks")
             Required: =false
@@ -415,6 +416,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
+                Height: =100
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
