@@ -1,3 +1,7 @@
 "'Delivery List_Form' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
+    LeftNav_DeliveryList_Form As LeftNav_1:
+        MenuItems: =colMenu
+        Width: =LeftNav_DeliveryList_Form.MenuWidth
+
