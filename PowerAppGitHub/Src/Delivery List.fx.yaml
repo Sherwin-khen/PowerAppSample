@@ -48,7 +48,7 @@
                 Items: |-
                     ='PIP: Deliverable_Received'
                 Layout: =Layout.Vertical
-                TemplateSize: =87
+                TemplateSize: =90
                 Width: =1116
                 Y: =81
                 ZIndex: =1
