@@ -54,186 +54,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LeftNav_1",
-                "type": "LeftNav_1.HamburgerIcon_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNav_1",
-                "type": "LeftNav_1.HamburgerIcon_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LeftNav_1",
-                "type": "LeftNav_1.GalNav_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNav_1",
-                "type": "LeftNav_1.GalNav_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LeftNav_1",
-                "type": "LeftNav_1.GalNav_2.GalSubMenu_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "LeftNav_1",
-                "type": "LeftNav_1.GalNav_2.GalSubMenu_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "LeftNav.HamburgerIcon.AccessibleLabel"
                 }
               ],
@@ -414,19 +234,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal"
+                "module": "LeftNav_1",
+                "type": "LeftNav_1.HamburgerIcon_2"
               }
             }
           ],
@@ -444,19 +264,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.TabIndex"
+                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.TabIndex",
+                  "fullyQualifiedName": "LeftNav_1.HamburgerIcon_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal"
+                "module": "LeftNav_1",
+                "type": "LeftNav_1.HamburgerIcon_2"
               }
             }
           ],
@@ -474,19 +294,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal"
+                "module": "LeftNav_1",
+                "type": "LeftNav_1.GalNav_2"
               }
             }
           ],
@@ -504,19 +324,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.TabIndex"
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.TabIndex",
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal"
+                "module": "LeftNav_1",
+                "type": "LeftNav_1.GalNav_2"
               }
             }
           ],
@@ -534,19 +354,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.AccessibleLabel"
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.AccessibleLabel",
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit"
+                "module": "LeftNav_1",
+                "type": "LeftNav_1.GalNav_2.GalSubMenu_2"
               }
             }
           ],
@@ -564,19 +384,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.TabIndex"
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.TabIndex",
+                  "fullyQualifiedName": "LeftNav_1.GalNav_2.GalSubMenu_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit"
+                "module": "LeftNav_1",
+                "type": "LeftNav_1.GalNav_2.GalSubMenu_2"
               }
             }
           ],
@@ -588,546 +408,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Resources",
-                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleClose"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleClose"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleClose"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleClose"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleID.DataCardValue1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleID.DataCardValue1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleID.DataCardValue1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRole.DataCardValue2_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRole.DataCardValue2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRole.DataCardValue2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleName.DataCardValue3_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleName.DataCardValue3_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleName.DataCardValue3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleSD.DataCardValue4_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleSD.DataCardValue4_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleSD.DataCardValue4_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleED.DataCardValue7_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleED.DataCardValue7_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleED.DataCardValue7_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleKR.DataCardValue8_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleKR.DataCardValue8_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleKR.DataCardValue8_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleID.DataCardValue1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleID.DataCardValue1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleID.DataCardValue1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRole.DataCardValue2_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRole.DataCardValue2_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRole.DataCardValue2_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleName.DataCardValue3_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleName.DataCardValue3_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleName.DataCardValue3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleSD.DataCardValue4_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleSD.DataCardValue4_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleSD.DataCardValue4_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleED.DataCardValue7_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleED.DataCardValue7_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleED.DataCardValue7_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleKR.DataCardValue8_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleKR.DataCardValue8_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Resources",
-                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleKR.DataCardValue8_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2031,19 +1311,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Delivery List'.Gallery6.AccessibleLabel"
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Delivery List'.Gallery6.AccessibleLabel",
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Delivery List",
-                "type": "'Delivery List'.Gallery6"
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal"
               }
             }
           ],
@@ -2061,19 +1341,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Delivery List'.Gallery6.TabIndex"
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Delivery List'.Gallery6.TabIndex",
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Delivery List",
-                "type": "'Delivery List'.Gallery6"
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleHeadGal"
               }
             }
           ],
@@ -2091,49 +1371,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.Gallery7.TabIndex"
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.Gallery7.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Delivery List",
-                "type": "'Delivery List'.Canvas2.DataCard3.Gallery7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.Gallery7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.Gallery7.AccessibleLabel",
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Delivery List",
-                "type": "'Delivery List'.Canvas2.DataCard3.Gallery7"
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal"
               }
             }
           ],
@@ -2145,6 +1395,756 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleIEdit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Resources",
+                "type": "Resources.ResourcesCanvas.ResScrDtCard.ResRoleDtGal.ResRoleDel"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleClose.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleClose.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleClose"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleID.DataCardValue1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleID.DataCardValue1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleID.DataCardValue1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRole.DataCardValue2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRole.DataCardValue2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRole.DataCardValue2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleName.DataCardValue3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleName.DataCardValue3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleName.DataCardValue3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleSD.DataCardValue4_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleSD.DataCardValue4_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleSD.DataCardValue4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleED.DataCardValue7_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleED.DataCardValue7_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleED.DataCardValue7_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleKR.DataCardValue8_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleAddRoleForm.ResRoleAddRoleKR.DataCardValue8_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleAddRoleForm.ResRoleAddRoleKR.DataCardValue8_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleID.DataCardValue1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleID.DataCardValue1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleID.DataCardValue1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRole.DataCardValue2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRole.DataCardValue2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRole.DataCardValue2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleName.DataCardValue3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleName.DataCardValue3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleName.DataCardValue3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleSD.DataCardValue4_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleSD.DataCardValue4_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleSD.DataCardValue4_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleED.DataCardValue7_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleED.DataCardValue7_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleED.DataCardValue7_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleKR.DataCardValue8_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleKR.DataCardValue8_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Resources",
+                "type": "Resources.ResRoleUpdateRoleForm.ResRoleUpdateRoleKR.DataCardValue8_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delivery List'.GalDelHeader.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delivery List'.GalDelHeader.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delivery List",
+                "type": "'Delivery List'.GalDelHeader"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delivery List'.GalDelHeader.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delivery List'.GalDelHeader.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Delivery List",
+                "type": "'Delivery List'.GalDelHeader"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.GalDelList.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.GalDelList.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Delivery List",
+                "type": "'Delivery List'.Canvas2.DataCard3.GalDelList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.GalDelList.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Delivery List'.Canvas2.DataCard3.GalDelList.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Delivery List",
+                "type": "'Delivery List'.Canvas2.DataCard3.GalDelList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
         }
       ],
       "tool": {
