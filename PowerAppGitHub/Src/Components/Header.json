@@ -1,79 +1,6 @@
 {
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": false,
-  "ComponentDefinitionInfo": {
-    "AllowAccessToGlobals": false,
-    "Children": [],
-    "ControlPropertyState": [
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "Fill",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "640",
-        "InvariantPropertyName": "Height",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "640",
-        "InvariantPropertyName": "Width",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      "X",
-      "Y",
-      "ZIndex"
-    ],
-    "LastModifiedTimestamp": "637951943338175622",
-    "Name": "Header",
-    "Rules": [
-      {
-        "Category": "Design",
-        "InvariantScript": "1",
-        "Property": "ZIndex",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "0",
-        "Property": "Y",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "0",
-        "Property": "X",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "Max(App.Width, App.MinScreenWidth)-45",
-        "Property": "Width",
-        "RuleProviderType": "System"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "Max(App.Height, App.MinScreenHeight)/12",
-        "Property": "Height",
-        "RuleProviderType": "System"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "RGBA(184, 0, 0, 1)",
-        "Property": "Fill",
-        "RuleProviderType": "System"
-      }
-    ]
-  },
   "ComponentManifest": {
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
@@ -92,7 +19,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637951943338175622",
+  "LastModifiedTimestamp": "637951689722063168",
   "Name": "4ccee2cb1f704c2b8a7e56aed6867aa6",
   "OverridableProperties": {},
   "TemplateOriginalName": "5d67c9fa16da401e92ea6e091ce4382a",
