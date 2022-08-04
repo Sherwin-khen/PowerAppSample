@@ -127,11 +127,11 @@ HomePage As screen:
         Height: =473
         Items: |-
             = If(ddsearchcat.SelectedText.Value = "ORR Head Code", 
-                Filter('ORR: Project Info', txtsearch.Text in 'ORR Head Code'),
+                Filter('ORR: Project Info', StartsWith( 'ORR Head Code', txtsearch.Text)),
                     If(ddsearchcat.SelectedText.Value = "Project Name",
-                        Filter('ORR: Project Info', txtsearch.Text in 'Project Name'),
+                        Filter('ORR: Project Info', StartsWith( 'Project Name', txtsearch.Text)),
                             If(ddsearchcat.SelectedText.Value = "Order Number",
-                                 Filter('ORR: Project Info', txtsearch.Text in 'Order Number'),'ORR: Project Info')))
+                                 Filter('ORR: Project Info', StartsWith( 'Order Number', txtsearch.Text)),'ORR: Project Info')))
             
             
              
