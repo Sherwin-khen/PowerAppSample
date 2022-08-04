@@ -84,10 +84,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "38363839-4e47-425b-8f06-5c21a97ec78a",
-    "Id": "17a9f3a3-b27f-4ad8-bc80-2328ffbe4b02",
+    "Id": "a94e9412-e180-4875-97be-55c3f5c4e621",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "PIP_2",
+    "Name": "PIP_2.msapp",
     "OriginatingVersion": "1.324"
   },
   "PublishInfo": {
