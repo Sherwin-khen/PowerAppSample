@@ -167,13 +167,13 @@ Overview As screen:
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(205, 209, 213, 1)
                     Items: |-
-                        =Choices([@'ORR: Project Info'].OpportunityRank)
+                        =Choices([@'ORR: Project Info'].'Opportunity Rank')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
                     SearchFields: =["Value"]
                     SearchItems: |-
-                        =Choices('ORR: Project Info'.OpportunityRank,DataCardValue46.SearchText)
+                        =Choices('ORR: Project Info'.'Opportunity Rank',DataCardValue46.SearchText)
                     SelectionFill: =RGBA(100, 118, 132, 1)
                     SelectMultiple: =false
                     Size: =13
@@ -259,13 +259,13 @@ Overview As screen:
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(205, 209, 213, 1)
                     Items: |-
-                        =Choices([@'ORR: Project Info'].OpportunityComplexity)
+                        =Choices([@'ORR: Project Info'].'Opportunity Complexity')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
                     SearchFields: =["Value"]
                     SearchItems: |-
-                        =Choices('ORR: Project Info'.OpportunityComplexity,DataCardValue47.SearchText)
+                        =Choices('ORR: Project Info'.'Opportunity Complexity',DataCardValue47.SearchText)
                     SelectionFill: =RGBA(100, 118, 132, 1)
                     SelectMultiple: =false
                     Size: =13
@@ -351,13 +351,13 @@ Overview As screen:
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(205, 209, 213, 1)
                     Items: |-
-                        =Choices([@'ORR: Project Info'].OpportuintyRisk)
+                        =Choices([@'ORR: Project Info'].'Opportuinty Risk')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
                     SearchFields: =["Value"]
                     SearchItems: |-
-                        =Choices('ORR: Project Info'.OpportuintyRisk,DataCardValue48.SearchText)
+                        =Choices('ORR: Project Info'.'Opportuinty Risk',DataCardValue48.SearchText)
                     SelectionFill: =RGBA(100, 118, 132, 1)
                     SelectMultiple: =false
                     Size: =13
@@ -443,13 +443,13 @@ Overview As screen:
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(205, 209, 213, 1)
                     Items: |-
-                        =Choices([@'ORR: Project Info'].OperationManager)
+                        =Choices([@'ORR: Project Info'].' Operation Manager')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
                     SearchFields: =["DisplayName"]
                     SearchItems: |-
-                        =Choices('ORR: Project Info'.OperationManager,DataCardValue49.SearchText)
+                        =Choices('ORR: Project Info'.' Operation Manager',DataCardValue49.SearchText)
                     SelectionFill: =RGBA(100, 118, 132, 1)
                     Size: =13
                     Template: =ListItemTemplate.Person
@@ -535,13 +535,13 @@ Overview As screen:
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(205, 209, 213, 1)
                     Items: |-
-                        =Choices([@'ORR: Project Info'].ProjectManager0)
+                        =Choices([@'ORR: Project Info'].'Project Manager')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(32, 54, 71, 1)
                     SearchFields: =["DisplayName"]
                     SearchItems: |-
-                        =Choices('ORR: Project Info'.ProjectManager0,DataCardValue50.SearchText)
+                        =Choices('ORR: Project Info'.'Project Manager',DataCardValue50.SearchText)
                     SelectionFill: =RGBA(100, 118, 132, 1)
                     Size: =13
                     Template: =ListItemTemplate.Person
