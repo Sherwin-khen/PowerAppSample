@@ -2,25 +2,6 @@
     Fill: =RGBA(255,255,255,1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
-    Container1_5 As groupContainer.manualLayoutContainer:
-        Height: =723
-        Width: =1312
-        X: =LeftNav_5.MenuWidth
-        Y: =45
-        ZIndex: =1
-
-        Label1_6 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =36
-            Size: =16
-            Text: ="Delivery List _TEST"
-            Width: =356
-            ZIndex: =1
-
     LeftNav_5 As LeftNav_1:
         MenuItems: =colMenu
         Width: =LeftNav_5.MenuWidth
