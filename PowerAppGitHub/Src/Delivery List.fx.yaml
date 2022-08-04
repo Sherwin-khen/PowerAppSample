@@ -24,10 +24,10 @@
 
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =Parent.Height - Self.Y
+        Height: =680
         Width: =Parent.Width - LeftNav_5.MenuWidth
         X: =LeftNav_5.MenuWidth
-        Y: =RectQuickActionBar5.Y + RectQuickActionBar5.Height
+        Y: =88
         ZIndex: =3
 
         DataCard3 As dataCard:
