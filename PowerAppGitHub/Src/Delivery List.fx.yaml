@@ -26,7 +26,7 @@
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width - LeftNav_5.MenuWidth
-        X: =250
+        X: =LeftNav_5.MenuWidth
         Y: =RectQuickActionBar5.Y + RectQuickActionBar5.Height
         ZIndex: =3
 
