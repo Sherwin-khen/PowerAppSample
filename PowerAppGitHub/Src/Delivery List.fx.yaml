@@ -147,8 +147,8 @@
             Height: =67
             OnSelect: =Select(Parent)
             Text: =ThisItem.Description
-            Width: =243
-            X: =18
+            Width: =234
+            X: =26
             ZIndex: =1
 
         lblDelDateReceived As label:
