@@ -15,40 +15,12 @@ Resources As screen:
             }
         )
 
-    ResProjectName As label:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =20
-        Text: ="Project Name "
-        Width: =231
-        X: =219
-        Y: =6
-        ZIndex: =1
-
-    ResourcesPage As label:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =20
-        Text: ="Resources |"
-        Width: =158
-        X: =61
-        Y: =6
-        ZIndex: =2
-
     ResourcesCanvas As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =702
+        Height: =708
         Width: =1312
         X: =54
-        Y: =65
+        Y: =59
         ZIndex: =3
 
         ResScrDtCard As dataCard:
@@ -363,15 +335,20 @@ Resources As screen:
                 Y: =96
                 ZIndex: =7
 
-    Header_1 As Header:
-        Width: =1311
-        X: =54
-        ZIndex: =8
+            Label1 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Text"
+                X: =309
+                Y: =91
+                ZIndex: =8
 
     LeftNav_4 As LeftNav_1:
         MenuItems: =colMenu
         Width: =LeftNav_4.MenuWidth
-        ZIndex: =12
+        ZIndex: =11
 
     ResRoleAddModal_1 As group:
         Height: =5
@@ -990,7 +967,7 @@ Resources As screen:
             Height: =768
             Visible: =_showRequestModal
             Width: =1366
-            ZIndex: =4
+            ZIndex: =5
 
         ResRoleUpdateRoleFormWhiteBG As rectangle:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1000,7 +977,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =65
-            ZIndex: =5
+            ZIndex: =6
 
         ResRoleUpdateRoleTitleRedBG As rectangle:
             BorderColor: =RGBA(254, 1, 1, 1)
@@ -1010,7 +987,7 @@ Resources As screen:
             Width: =563
             X: =401
             Y: =65
-            ZIndex: =6
+            ZIndex: =7
 
         ResRoleUpdateRoleTitle As label:
             Align: =Align.Center
@@ -1024,7 +1001,7 @@ Resources As screen:
             Visible: =_showRequestModal
             X: =608
             Y: =65
-            ZIndex: =7
+            ZIndex: =8
 
         ResRoleUpdateRoleForm As form:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1565,7 +1542,7 @@ Resources As screen:
             Width: =128
             X: =793
             Y: =623
-            ZIndex: =11
+            ZIndex: =12
 
         ResRoleUpdateRoleClose As icon.Cancel:
             BorderColor: =RGBA(131, 24, 75, 1)
@@ -1581,4 +1558,8 @@ Resources As screen:
             X: =921
             Y: =74
             ZIndex: =13
+
+    Header_1 As Header:
+        X: =54
+        ZIndex: =22
 

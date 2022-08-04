@@ -5153,7 +5153,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "Metadata": {
-        "AllowAccessToGlobals": false,
+        "AllowAccessToGlobals": true,
         "AllowCustomization": true,
         "Description": ""
       },
@@ -5175,7 +5175,7 @@
         {
           "Category": "Data",
           "PropertyName": "MenuWidth",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -5210,7 +5210,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnReset",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         }
       ],
       "StyleName": "",

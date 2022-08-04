@@ -2168,7 +2168,7 @@
       "Type": "ControlInfo"
     },
     "LeftNav_1": {
-      "AllowAccessToGlobals": false,
+      "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
