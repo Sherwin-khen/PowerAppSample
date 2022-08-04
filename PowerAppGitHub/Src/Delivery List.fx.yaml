@@ -129,7 +129,7 @@
 
     GalDelHeader As gallery.galleryVertical:
         BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(245, 70, 70, 100)
         Height: =79
         Items: =delListHeaderA
         Layout: =Layout.Vertical
