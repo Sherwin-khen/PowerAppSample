@@ -3,13 +3,100 @@
     OnVisible: |-
         =ClearCollect(delListHeaderA, {Description: "Description", Date_Received: "Date Received", Version_Received: "Version Received", Delivery_Object: "Delivery Object", Remarks: "Remarks"});
 
+    GalDelHeader As gallery.galleryVertical:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(245, 70, 70, 100)
+        Height: =79
+        Items: =delListHeaderA
+        Layout: =Layout.Vertical
+        TemplateSize: =67
+        Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
+        X: =LeftNav_DeliveryList.MenuWidth
+        Y: =88
+        ZIndex: =1
+
+        lblDelDescription As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Description
+            Width: =234
+            X: =26
+            ZIndex: =1
+
+        lblDelDateReceived As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Date_Received
+            X: =280
+            ZIndex: =2
+
+        lblDelVersion As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Version_Received
+            Width: =140
+            X: =452
+            ZIndex: =3
+
+        lblDelObject As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Delivery_Object
+            Width: =198
+            X: =611
+            ZIndex: =4
+
+        lblDelRemarks As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Remarks
+            Width: =183
+            X: =818
+            ZIndex: =5
+
+        DelIconHeaderEdit As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Edit
+            OnSelect: =Select(Parent)
+            Width: =30
+            X: =1049
+            Y: =18
+            ZIndex: =6
+
     RectQuickActionBar5 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(100, 118, 132, 1)
         Height: =88
         Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
         X: =LeftNav_DeliveryList.MenuWidth
-        ZIndex: =1
+        ZIndex: =2
 
     LblAppName5 As label:
         Align: =Align.Center
@@ -20,7 +107,7 @@
         Text: ="[Title]"
         Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
         X: =LeftNav_DeliveryList.MenuWidth
-        ZIndex: =2
+        ZIndex: =3
 
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -28,7 +115,7 @@
         Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
         X: =LeftNav_DeliveryList.MenuWidth
         Y: =88
-        ZIndex: =3
+        ZIndex: =4
 
         DataCard3 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -44,7 +131,7 @@
 
             GalDelList As gallery.galleryVertical:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Height: =Parent.Height
+                Height: =444
                 Items: |-
                     ='PIP: Deliverable_Received'
                 Layout: =Layout.Vertical
@@ -141,93 +228,6 @@
                     X: =1047
                     Y: =11
                     ZIndex: =7
-
-    GalDelHeader As gallery.galleryVertical:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =RGBA(245, 70, 70, 100)
-        Height: =79
-        Items: =delListHeaderA
-        Layout: =Layout.Vertical
-        TemplateSize: =67
-        Width: =Parent.Width - LeftNav_DeliveryList.MenuWidth
-        X: =LeftNav_DeliveryList.MenuWidth
-        Y: =88
-        ZIndex: =4
-
-        lblDelDescription As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Description
-            Width: =234
-            X: =26
-            ZIndex: =1
-
-        lblDelDateReceived As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Date_Received
-            X: =280
-            ZIndex: =2
-
-        lblDelVersion As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Version_Received
-            Width: =140
-            X: =452
-            ZIndex: =3
-
-        lblDelObject As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Delivery_Object
-            Width: =198
-            X: =611
-            ZIndex: =4
-
-        lblDelRemarks As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =67
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Remarks
-            Width: =183
-            X: =818
-            ZIndex: =5
-
-        DelIconHeaderEdit As icon.Add:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =30
-            Icon: =Icon.Edit
-            OnSelect: =Select(Parent)
-            Width: =30
-            X: =1049
-            Y: =18
-            ZIndex: =6
 
     LeftNav_DeliveryList As LeftNav_1:
         MenuItems: =colMenu
