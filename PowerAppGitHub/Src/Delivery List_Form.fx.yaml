@@ -482,17 +482,33 @@
         X: =LeftNav_DeliveryList_Form.MenuWidth
         ZIndex: =3
 
-    Button1 As button:
+    btnDelFormSave As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
         FontWeight: =FontWeight.Semibold
+        Height: =50
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         Size: =15
         Text: ="Button"
         X: =LeftNav_DeliveryList_Form.MenuWidth + 30
-        Y: =705
+        Y: =693
         ZIndex: =4
+
+    btnDelFormCancel As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        Size: =15
+        Text: ="Button"
+        X: =LeftNav_DeliveryList_Form.MenuWidth + 220
+        Y: =693
+        ZIndex: =5
 

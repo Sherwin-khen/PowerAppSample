@@ -89,7 +89,7 @@
         "Name": "ResourcesPage_1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 373,
+        "PublishOrderIndex": 375,
         "Rules": [
           {
             "Category": "Data",
@@ -427,7 +427,7 @@
         "Name": "ResourcesPage_2",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 374,
+        "PublishOrderIndex": 376,
         "Rules": [
           {
             "Category": "Data",
