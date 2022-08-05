@@ -241,13 +241,14 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(100, 118, 132, 1)
         FontWeight: =FontWeight.Semibold
+        Height: =50
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =Navigate('Delivery List_Form', Cover, {selecteditem: Defaults('PIP: Deliverable_Received')})//false
         Size: =15
         Text: ="New"
-        X: =LeftNav_DeliveryList.MenuWidth + 10
-        Y: =96
+        X: =LeftNav_DeliveryList.MenuWidth + 5
+        Y: =91
         ZIndex: =6
 
