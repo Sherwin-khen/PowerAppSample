@@ -948,6 +948,16 @@ Resources As screen:
             Y: =74
             ZIndex: =19
 
+    Label1 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Text"
+        X: =40
+        Y: =40
+        ZIndex: =20
+
     ResRoleUpdateModal As group:
         Height: =5
         Width: =5
