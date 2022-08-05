@@ -12,6 +12,7 @@
         Height: =616
         Item: =selecteditem
         NumberOfColumns: =1
+        OnSuccess: =Navigate('Delivery List')
         Width: =Parent.Width - LeftNav_DeliveryList_Form.MenuWidth
         X: =LeftNav_DeliveryList_Form.MenuWidth
         Y: =64
@@ -523,6 +524,8 @@
         Height: =50
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =Remove('PIP: Deliverable_Received', GalDelList.Selected)//false
         Size: =15
         Text: ="Delete"
         X: =LeftNav_DeliveryList_Form.MenuWidth + 925
