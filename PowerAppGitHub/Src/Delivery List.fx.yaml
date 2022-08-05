@@ -247,7 +247,7 @@
             =Navigate('Delivery List_Form', Cover, {selecteditem: Defaults('PIP: Deliverable_Received')})//false
         Size: =15
         Text: ="New"
-        X: =265
+        X: =LeftNav_DeliveryList.MenuWidth + 10
         Y: =96
         ZIndex: =6
 
