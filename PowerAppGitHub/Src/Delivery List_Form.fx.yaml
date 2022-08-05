@@ -468,3 +468,17 @@
                 Y: =DataCardKey13.Y
                 ZIndex: =4
 
+    lblDelTitleForm As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(230, 230, 230, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =16
+        Text: ="Deliverable Details"
+        Width: =1116
+        X: =250
+        ZIndex: =3
+

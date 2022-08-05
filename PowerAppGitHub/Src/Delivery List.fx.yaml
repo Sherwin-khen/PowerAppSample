@@ -98,7 +98,7 @@
         X: =LeftNav_DeliveryList.MenuWidth
         ZIndex: =2
 
-    LblAppName5 As label:
+    lblDelTitleList As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
