@@ -2,42 +2,6 @@ HomePage As screen:
     Fill: =RGBA(255,255,255,1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
-    txtsearch As text:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        HintText: ="Search Here"
-        HoverBorderColor: =RGBA(131, 24, 75, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(255, 211, 205, 1)
-        PaddingLeft: =40
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Size: =13
-        Width: =237
-        X: =902
-        Y: =110
-        ZIndex: =1
-
-    searchicon1 As icon.Search:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Color: =RGBA(255, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =26
-        Icon: =Icon.Search
-        Width: =30
-        X: =904
-        Y: =117
-        ZIndex: =2
-
     ddsearchcat As dropdown:
         AllowEmptySelection: =true
         BorderColor: =RGBA(131, 24, 75, 1)
@@ -58,8 +22,8 @@ HomePage As screen:
         SelectionFill: =RGBA(211, 66, 9, 1)
         Size: =13
         Width: =171
-        X: =1145
-        Y: =110
+        X: =904
+        Y: =115
         ZIndex: =3
 
     headerline As rectangle:
@@ -252,7 +216,10 @@ HomePage As screen:
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =26
             Icon: =Icon.Edit
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =
+                Select(Parent);
+                EditForm(Form1);UpdateContext({_showPIP_add_modal:true})
             Width: =29
             X: =1173
             ZIndex: =9
@@ -264,9 +231,7 @@ HomePage As screen:
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =22
             Icon: =Icon.AddDocument
-            OnSelect: |-
-                =Select(Parent);
-                EditForm(Form1);UpdateContext({_showPIP_add_modal:true})
+            OnSelect: =Select(Parent)
             Width: =37
             X: =1136
             Y: =4
@@ -387,6 +352,49 @@ HomePage As screen:
         X: =1172
         Y: =205
         ZIndex: =17
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =25
+
+        txtsearch As text:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            HintText: ="Search Here"
+            HoverBorderColor: =RGBA(131, 24, 75, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(255, 211, 205, 1)
+            PaddingLeft: =40
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =13
+            Width: =237
+            X: =1080
+            Y: =115
+            ZIndex: =1
+
+        searchicon1 As icon.Search:
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(255, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =26
+            Icon: =Icon.Search
+            Width: =30
+            X: =1084
+            Y: =122
+            ZIndex: =2
 
     PIP_Add_Modal As group:
         Height: =5
