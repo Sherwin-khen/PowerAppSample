@@ -9,11 +9,12 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: |-
             ='PIP: Deliverable_Received'
-        Height: =652
+        Height: =616
         Item: =selecteditem
         NumberOfColumns: =1
         Width: =Parent.Width - LeftNav_DeliveryList_Form.MenuWidth
         X: =LeftNav_DeliveryList_Form.MenuWidth
+        Y: =64
         ZIndex: =2
 
         Description_DataCard1 As typedDataCard.textualEditCard:
@@ -64,6 +65,7 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -422,6 +424,7 @@
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
