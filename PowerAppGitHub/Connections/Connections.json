@@ -11,15 +11,6 @@
     "datasets": {
       "https://fujitsu.sharepoint.com/teams/Global-f1dd7691": {
         "dataSources": {
-          "Assumption": {
-            "tableName": "b11d4462-0682-411c-a769-dbbc5df50068"
-          },
-          "Constraint": {
-            "tableName": "cdc95970-92da-4fe3-8928-18412c75a02d"
-          },
-          "Dependency": {
-            "tableName": "464bfe8a-7970-4afe-8632-3a077705582f"
-          },
           "ORR: Project Info": {
             "tableName": "0173795b-1d3b-4554-a345-173204011c8e"
           },
@@ -39,10 +30,7 @@
       "ORR: Project Info",
       "PIP: Resource Role",
       "PIP: Deliverable_Received",
-      "ORR: Project Info_1",
-      "Assumption",
-      "Constraint",
-      "Dependency"
+      "ORR: Project Info_1"
     ],
     "dependencies": {},
     "dependents": [],
