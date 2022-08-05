@@ -195,7 +195,7 @@ HomePage As screen:
             Size: =13
             Text: =ThisItem.'Process in Charge 2'
             Width: =146
-            X: =980
+            X: =968
             ZIndex: =7
 
         action_lbl As label:
