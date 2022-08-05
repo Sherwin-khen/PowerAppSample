@@ -2,61 +2,943 @@
     Fill: =RGBA(255,255,255,1)
     LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
 
-    Container1_2 As groupContainer.manualLayoutContainer:
+    ACD As groupContainer.manualLayoutContainer:
         Height: =723
         Width: =1312
         X: =54
         Y: =45
         ZIndex: =1
 
-        Label1_3 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            Size: =16
-            Text: ="Assumptions, Constraints and Dependencies"
-            Width: =487
-            X: =196
-            ZIndex: =1
+        Canvas_Assumptions As fluidGrid.fluidGridWithBlankCard:
+            BorderThickness: =0
+            Height: =582
+            Visible: =If(acdTab.Selected.Name = "Assumptions",true,false)
+            Width: =1212
+            X: =40
+            Y: =117
+            ZIndex: =3
 
-        Label2 As label:
-            BorderColor: =RGBA(131, 24, 75, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Size: =13
-            Text: ="Text"
-            Width: =173
+            DataCard_Assumption As dataCard:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.Solid
+                BorderThickness: =0
+                DisplayMode: =DisplayMode.Edit
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =451
+                Width: =1212
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                Assumption_Data As gallery.galleryVertical:
+                    BorderColor: =RGBA(179, 179, 179, 1)
+                    BorderThickness: =1
+                    Height: =355
+                    Items: =Assumption
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =40
+                    Width: =1113
+                    X: =99
+                    Y: =96
+                    ZIndex: =1
+
+                    TextInput_assumptionValue As text:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =ThisItem.Title
+                        DelayOutput: =true
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =TextInput_assumptionID.DisplayMode
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =39
+                        HoverBorderColor: =RGBA(32, 54, 71, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        OnSelect: =Select(Parent)
+                        Size: =12
+                        Width: =856
+                        X: =111
+                        Y: =1
+                        ZIndex: =12
+
+                    TextInput_assumptionID As text:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =ThisItem.ID
+                        DelayOutput: =true
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =If(editGrid = true,DisplayMode.Edit,DisplayMode.View)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        HoverBorderColor: =RGBA(32, 54, 71, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        OnSelect: =Select(Parent)
+                        Size: =12
+                        Width: =111
+                        ZIndex: =13
+
+                    assumptionDelete_icon As icon.Trash:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(254, 1, 1, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =40
+                        Icon: =Icon.Trash
+                        OnSelect: =Remove(Assumption,ThisItem)
+                        Width: =40
+                        X: =1049
+                        ZIndex: =14
+
+                    assumptionEdit_icon As icon.Edit:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(254, 1, 1, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =40
+                        Icon: =Icon.Edit
+                        OnSelect: |-
+                            =EditForm(assumptionForm_Edit);Select(Parent);
+                            UpdateContext({assumptionModal_Edit:true})
+                        Width: =40
+                        X: =1009
+                        ZIndex: =15
+
+                "'Header.Assumptions' As gallery.galleryVertical":
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderThickness: =1
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(254, 1, 1, 1)
+                    Height: =45
+                    Items: =Assumption
+                    Layout: =Layout.Vertical
+                    ShowScrollbar: =false
+                    TemplateSize: =40
+                    Width: =1174
+                    X: =99
+                    Y: =50
+                    ZIndex: =2
+
+                    assumptionAction_Label As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisplayMode: =DisplayMode.View
+                        FontWeight: =FontWeight.Bold
+                        OnSelect: =Select(Parent)
+                        Size: =16
+                        Text: ="Action"
+                        Width: =145
+                        X: =967
+                        ZIndex: =1
+
+                    assumptionID_Label As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisplayMode: =DisplayMode.View
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =16
+                        Text: ="ID"
+                        Width: =100
+                        ZIndex: =3
+
+                    assumptionTitle_Label As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisplayMode: =DisplayMode.View
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =16
+                        Text: ="Assumptions"
+                        Width: =755
+                        X: =171
+                        ZIndex: =7
+
+                Rectangle_acd8 As rectangle:
+                    BorderColor: =RGBA(179, 179, 179, 1)
+                    BorderThickness: =1
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Width: =1174
+                    X: =99
+                    ZIndex: =3
+
+                Add_Assumptions As button:
+                    Align: =Align.Right
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                    Font: =Font.'Segoe UI'
+                    Height: =50
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                    OnSelect: |-
+                        =NewForm(assumptionForm_Add); UpdateContext({assumptionModal:true})
+                    PaddingRight: =12
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
+                    Size: =16
+                    Text: ="New"
+                    Width: =100
+                    X: =99
+                    ZIndex: =4
+
+                assumptionAdd_icon As icon.Add:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(254, 1, 1, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =DisplayMode.View
+                    Height: =30
+                    Icon: =Icon.Add
+                    Width: =30
+                    X: =99
+                    Y: =9
+                    ZIndex: =5
+
+        acdRectQuickActionBar As rectangle:
+            BorderColor: =RGBA(255, 3, 7, 1)
+            Fill: =RGBA(153, 153, 153, 1)
+            Height: =1
+            Width: =1175
+            X: =77
+            Y: =56
+            ZIndex: =4
+
+        acdTab As gallery.galleryHorizontal:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Height: =91
+            Items: |-
+                =Table({Name:"Assumptions"},{Name:"Constraints"},{Name:"Dependencies"})
+            TemplateSize: =153
+            X: =135
+            Y: =40
+            ZIndex: =5
+
+            Rectangle_acd7 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderThickness: =1
+                Fill: =RGBA(106, 106, 107, 1)
+                Height: =14
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =153
+                Y: =58
+                ZIndex: =2
+
+            acdTabs As button:
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(254, 1, 1, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =43
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                OnSelect: =Select(Parent)
+                Size: =15
+                Text: =ThisItem.Name
+                Width: =153
+                Y: =16
+                ZIndex: =3
+
+        assumptionAddModal As group:
+            Height: =5
+            Width: =5
             X: =40
             Y: =40
-            ZIndex: =2
+            ZIndex: =13
 
-    ACD_TABS As gallery.galleryHorizontal:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Height: =114
-        Items: |-
-            =Table({Name:"Assumptions"},{Name:"Constraints"},{Name:"Dependencies"})
-        TemplateSize: =153
-        Width: =497
-        X: =250
-        Y: =46
-        ZIndex: =4
+            Rectangle_acd6 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(60, 60, 60, 0.5)
+                Height: =723
+                Visible: =assumptionModal
+                Width: =1312
+                ZIndex: =6
 
-        Button7 As button:
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(100, 118, 132, 1)
-            FontWeight: =FontWeight.Semibold
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-            OnSelect: =Select(Parent)
-            Size: =15
-            Text: =ThisItem.Name
-            Y: =36
-            ZIndex: =1
+            Rectangle_acd5 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =637
+                Visible: =assumptionModal
+                Width: =563
+                X: =441
+                Y: =86
+                ZIndex: =7
+
+            Rectangle_acd4 As rectangle:
+                BorderColor: =RGBA(254, 1, 1, 1)
+                Fill: =RGBA(254, 1, 1, 1)
+                Height: =44
+                Visible: =assumptionModal
+                Width: =563
+                X: =441
+                Y: =103
+                ZIndex: =8
+
+            asuumptionForm As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Size: =16
+                Text: ="Add"
+                Visible: =assumptionModal
+                X: =648
+                Y: =103
+                ZIndex: =9
+
+            assumptionForm_Add As form:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DataSource: =Assumption
+                Height: =536
+                Visible: =assumptionModal
+                Width: =563
+                X: =441
+                Y: =187
+                ZIndex: =10
+
+                project_id_DataCard1 As typedDataCard.numberEditCard:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="project_id"
+                    Default: =ThisItem.project_id
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Assumption],DataSourceInfo.DisplayName,"project_id")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =135
+                    Required: =false
+                    Update: =Value(DataCardValue9_1.Text)
+                    Width: =561
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey9_1 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =34
+                        Size: =13
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue9_1 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Format: =TextFormat.Number
+                        HoverBorderColor: =RGBA(32, 54, 71, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =13
+                        Tooltip: =Parent.DisplayName
+                        Width: =87
+                        X: =30
+                        Y: =DataCardKey9_1.Y + DataCardKey9_1.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage9_1 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue9_1.Y + DataCardValue9_1.Height
+                        ZIndex: =3
+
+                    StarVisible2_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =DataCardKey9_1.Height
+                        Size: =13
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey9_1.Y
+                        ZIndex: =4
+
+                Title_DataCard2 As typedDataCard.textualEditCard:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Title"
+                    Default: =ThisItem.Title
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Assumption],DataSourceInfo.DisplayName,"Title")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =244
+                    MaxLength: =DataSourceInfo([@Assumption], DataSourceInfo.MaxLength, "Title")
+                    Required: =true
+                    Update: =DataCardValue10_1.Text
+                    Width: =561
+                    X: =0
+                    Y: =1
+                    ZIndex: =1
+
+                    DataCardKey10_1 As label:
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =39
+                        Size: =13
+                        Text: =Parent.DisplayName
+                        Width: =501
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue10_1 As text:
+                        Align: =Align.Justify
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Height: =153
+                        HoverBorderColor: =RGBA(32, 54, 71, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        MaxLength: =Parent.MaxLength
+                        Mode: =TextMode.MultiLine
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =13
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey10_1.Y + DataCardKey10_1.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage10_1 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue10_1.Y + DataCardValue10_1.Height
+                        ZIndex: =3
+
+                    StarVisible3_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =DataCardKey10_1.Height
+                        Size: =13
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey10_1.Y
+                        ZIndex: =4
+
+            acdSave1 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(254, 1, 1, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =43
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                OnSelect: |-
+                    =UpdateContext({assumptionModal:false});
+                    SubmitForm(assumptionForm_Add);
+                    Refresh(Assumption)
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =15
+                Text: ="Save"
+                Visible: =assumptionModal
+                Width: =128
+                X: =876
+                Y: =680
+                ZIndex: =11
+
+            acdClose1 As icon.Cancel:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =44
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({assumptionModal:false})
+                Visible: =assumptionModal
+                Width: =44
+                X: =960
+                Y: =103
+                ZIndex: =12
+
+        assumptionEditModal As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =22
+
+            Rectangle_acd3 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(60, 60, 60, 0.5)
+                Height: =723
+                Visible: =assumptionModal_Edit
+                Width: =1312
+                ZIndex: =14
+
+            Rectangle_acd2 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =637
+                Visible: =assumptionModal_Edit
+                Width: =563
+                X: =441
+                Y: =86
+                ZIndex: =15
+
+            Rectangle_acd1 As rectangle:
+                BorderColor: =RGBA(254, 1, 1, 1)
+                Fill: =RGBA(254, 1, 1, 1)
+                Height: =44
+                Visible: =assumptionModal_Edit
+                Width: =563
+                X: =441
+                Y: =103
+                ZIndex: =16
+
+            acdForm As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =44
+                Size: =16
+                Text: ="Update"
+                Visible: =assumptionModal_Edit
+                X: =648
+                Y: =103
+                ZIndex: =17
+
+            assumptionForm_Edit As form:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DataSource: =Assumption
+                Height: =570
+                Item: =Assumption_Data.Selected
+                Visible: =assumptionModal_Edit
+                Width: =563
+                X: =441
+                Y: =153
+                ZIndex: =18
+
+                project_id_DataCard1_1 As typedDataCard.numberEditCard:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="project_id"
+                    Default: =ThisItem.project_id
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Assumption],DataSourceInfo.DisplayName,"project_id")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =104
+                    Required: =false
+                    Update: =Value(DataCardValue9_2.Text)
+                    Width: =561
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey9_2 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =34
+                        Size: =15
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue9_2 As text:
+                        Align: =Align.Center
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Format: =TextFormat.Number
+                        HoverBorderColor: =RGBA(32, 54, 71, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =12
+                        Tooltip: =Parent.DisplayName
+                        Width: =48
+                        X: =30
+                        Y: =DataCardKey9_2.Y + DataCardKey9_2.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage9_2 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue9_2.Y + DataCardValue9_2.Height
+                        ZIndex: =3
+
+                    StarVisible2_2 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =DataCardKey9_2.Height
+                        Size: =13
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey9_2.Y
+                        ZIndex: =4
+
+                Title_DataCard2_1 As typedDataCard.textualEditCard:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Title"
+                    Default: =ThisItem.Title
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Assumption],DataSourceInfo.DisplayName,"Title")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =301
+                    MaxLength: =DataSourceInfo([@Assumption], DataSourceInfo.MaxLength, "Title")
+                    Required: =true
+                    Update: =DataCardValue10_2.Text
+                    Width: =561
+                    X: =0
+                    Y: =1
+                    ZIndex: =1
+
+                    DataCardKey10_2 As label:
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =39
+                        Size: =15
+                        Text: =Parent.DisplayName
+                        Width: =501
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue10_2 As text:
+                        Align: =Align.Justify
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =193
+                        HoverBorderColor: =RGBA(32, 54, 71, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        MaxLength: =Parent.MaxLength
+                        Mode: =TextMode.MultiLine
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =12
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey10_2.Y + DataCardKey10_2.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage10_2 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue10_2.Y + DataCardValue10_2.Height
+                        ZIndex: =3
+
+                    StarVisible3_2 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =DataCardKey10_2.Height
+                        Size: =13
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey10_2.Y
+                        ZIndex: =4
+
+                "'Created By_DataCard1_1' As typedDataCard.comboBoxViewCard":
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Author"
+                    Default: =ThisItem.'Created By'
+                    DisplayMode: =DisplayMode.View
+                    DisplayName: =DataSourceInfo([@Assumption],DataSourceInfo.DisplayName,"Author")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =91
+                    Required: =false
+                    Update: =DataCardValue11_1.Selected
+                    Width: =374
+                    X: =0
+                    Y: =2
+                    ZIndex: =1
+
+                    DataCardKey11_1 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =34
+                        Size: =13
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue11_1 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        ChevronBackground: =RGBA(100, 118, 132, 1)
+                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DefaultSelectedItems: =Parent.Default
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayFields: =["DisplayName","Email","Picture"]
+                        DisplayMode: =Parent.DisplayMode
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(205, 209, 213, 1)
+                        IsSearchable: =false
+                        Items: =Choices([@Assumption].'Created By')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(32, 54, 71, 1)
+                        SearchFields: =["DisplayName"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(100, 118, 132, 1)
+                        SelectMultiple: =false
+                        Size: =13
+                        Template: =ListItemTemplate.Person
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey11_1.Y + DataCardKey11_1.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage11_1 As label:
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue11_1.Y + DataCardValue11_1.Height
+                        ZIndex: =3
+
+                    StarVisible4_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(32, 54, 71, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =DataCardKey11_1.Height
+                        Size: =13
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey11_1.Y
+                        ZIndex: =4
+
+            acdClear As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(133, 133, 133, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                OnSelect: |-
+                    =UpdateContext({assumptionModal:false})
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =15
+                Text: ="Clear"
+                Visible: =assumptionModal_Edit
+                Width: =128
+                X: =441
+                Y: =679
+                ZIndex: =19
+
+            acdSace As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(254, 1, 1, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =43
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                OnSelect: |-
+                    =UpdateContext({assumptionModal_Edit:false});
+                    SubmitForm(assumptionForm_Edit);
+                    Refresh(Assumption)
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =15
+                Text: ="Save"
+                Visible: =assumptionModal_Edit
+                Width: =128
+                X: =876
+                Y: =680
+                ZIndex: =20
+
+            acdClose As icon.Cancel:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =44
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({assumptionModal_Edit:false})
+                Visible: =assumptionModal_Edit
+                Width: =44
+                X: =960
+                Y: =103
+                ZIndex: =21
 
     LeftNav_3 As LeftNav_1:
         MenuItems: =colMenu
