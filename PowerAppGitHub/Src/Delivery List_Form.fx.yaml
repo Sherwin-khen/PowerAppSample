@@ -10,6 +10,7 @@
         DataSource: |-
             ='PIP: Deliverable_Received'
         Height: =652
+        Item: =selecteditem
         NumberOfColumns: =1
         Width: =Parent.Width - LeftNav_DeliveryList_Form.MenuWidth
         X: =LeftNav_DeliveryList_Form.MenuWidth
