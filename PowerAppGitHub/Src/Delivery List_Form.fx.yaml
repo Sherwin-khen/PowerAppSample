@@ -12,6 +12,7 @@
         Height: =616
         Item: =selecteditem
         NumberOfColumns: =1
+        OnSuccess: =Navigate('Delivery List')
         Width: =Parent.Width - LeftNav_DeliveryList_Form.MenuWidth
         X: =LeftNav_DeliveryList_Form.MenuWidth
         Y: =64
